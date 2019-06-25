@@ -1,10 +1,8 @@
-@charset "UTF-8";
 /*
-Theme Name: JD - Basic Wordpress Template
-Description: Basic template for Wordpress
-Author: Jérôme Dessy
+Theme Name: sidecar
+Description: Wordpress theme
+Author: Audrey Mertens & Evrard de Visscher
 */
-/* Tools */
 /* Site settings */
 html {
   font-family: sans-serif;
@@ -248,6 +246,37 @@ body {
 
 /* Modules */
 /* Layout */
+.footergrey {
+  background: #404040; }
+
+.footergrey_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto; }
+
+.footerblack {
+  background: black; }
+
+.greyitem p {
+  color: white; }
+
+.logofooter {
+  text-align: center;
+  color: white;
+  padding: 100px 0px;
+  margin: 0px; }
+
+.greyitem {
+  padding: 90px 0px 70px 0px; }
+
 /* Vendor */
 #outdated {
   display: none;
