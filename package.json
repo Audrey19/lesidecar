@@ -1,0 +1,29 @@
+{
+  "name": "project",
+  "version": "2.0.0",
+  "description": "Wordpress theme init",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeromedessy"
+  },
+  "keywords": [
+    "Workflow"
+  ],
+  "author": "Jérôme Dessy",
+  "license": "ISC",
+  "homepage": "https://github.com/jeromedessy",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "^4",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-notify": "*",
+    "gulp-sass": "*",
+    "gulp-eslint": "*",
+    "gulp-uglify": "*"
+  }
+}

@@ -1,0 +1,1 @@
+jQuery(function(){console.log("first script !")}),jQuery(function(){console.log("second script !")});
