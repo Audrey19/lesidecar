@@ -247,7 +247,7 @@ body {
 /* Modules */
 /* Layout */
 .footergrey {
-  background: #404040; }
+  background: #11161B; }
 
 .footergrey_container {
   display: -webkit-flex;
@@ -263,19 +263,50 @@ body {
   margin: auto; }
 
 .footerblack {
-  background: black; }
+  background: #000000; }
+
+.footerblack_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  padding: 62px 0px; }
 
 .greyitem p {
-  color: white; }
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px; }
 
 .logofooter {
   text-align: center;
   color: white;
-  padding: 100px 0px;
-  margin: 0px; }
+  margin: 0px;
+  letter-spacing: 2.5px;
+  font-size: 19px; }
+
+.imgfooter {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px; }
 
 .greyitem {
-  padding: 90px 0px 70px 0px; }
+  padding: 20px 0px 50px 0px; }
+
+.fa {
+  padding: 0px;
+  font-size: 15px;
+  width: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: white; }
+
+.fa:hover {
+  opacity: 0.7; }
 
 /* Vendor */
 #outdated {
