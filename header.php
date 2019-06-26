@@ -17,5 +17,7 @@
 </head>
 <body>
 <header>
+  <p class="logo_name">LE SIDECAR</p>
+  <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_black.png" alt="logo">
   <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?>
 </header>
