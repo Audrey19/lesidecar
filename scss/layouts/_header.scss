@@ -1,3 +1,35 @@
-header {
 
+header{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    .logo_name{
+        size: 14px;
+        font-family: $ternaryFont;
+    }
+    .logo_black{
+        width: 50px;
+        position: absolute;
+        right: 50%;
+        transform: translate(-50%)
+    }
+    .menu-navmenu-container {
+        width:40%;
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                size: 12px;
+                font-family: $ternaryFont;
+                color: black
+            }
+        }
+
+    }
 }

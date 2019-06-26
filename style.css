@@ -1,10 +1,8 @@
-@charset "UTF-8";
 /*
-Theme Name: JD - Basic Wordpress Template
-Description: Basic template for Wordpress
-Author: Jérôme Dessy
+Theme Name: sidecar
+Description: Wordpress theme
+Author: Audrey Mertens & Evrard de Visscher
 */
-/* Tools */
 /* Site settings */
 html {
   font-family: sans-serif;
@@ -242,12 +240,119 @@ template {
 [hidden] {
   display: none; }
 
+.firstTitle {
+  size: 40px; }
+
+.sectionTitle {
+  size: 14px;
+  color: #E4E3E3;
+  letter-spacing: 4px;
+  text-transform: uppercase; }
+
+.paragraphe {
+  size: 18px;
+  font-family: "Montserrat", sans-serif; }
+
+.margin-bottom--small {
+  margin-bottom: 1rem; }
+
+.margin-bottom--medium {
+  margin-bottom: 4rem; }
+
+.margin-bottom--big {
+  margin-bottom: 8rem; }
+
+.margin-top--small {
+  margin-top: 1rem; }
+
+.margin-top--medium {
+  margin-top: 4rem; }
+
+.margin-top--big {
+  margin-top: 8rem; }
+
+.padding-bottom--small {
+  padding-bottom: 1rem; }
+
+.padding-bottom--medium {
+  padding-bottom: 4rem; }
+
+.padding-bottom--big {
+  padding-bottom: 8rem; }
+
+.padding-top--small {
+  padding-top: 1rem; }
+
+.padding-top--medium {
+  padding-top: 4rem; }
+
+.padding-top--big {
+  padding-top: 8rem; }
+
+/*@include responsive(tablet) { } */
 body {
   padding: 0px;
   background-color: #F2F3F3; }
 
 /* Modules */
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  cursor: pointer; }
+
+.btn_blue {
+  color: white;
+  background-color: #4737FF; }
+
+.btn_white {
+  color: #4737FF;
+  background-color: white; }
+
 /* Layout */
+header {
+  width: 90%;
+  margin: 10px auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative; }
+  header .logo_name {
+    size: 14px;
+    font-family: "Montserrat", sans-serif; }
+  header .logo_black {
+    width: 50px;
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%); }
+  header .menu-navmenu-container {
+    width: 40%; }
+    header .menu-navmenu-container ul {
+      list-style-type: none;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      header .menu-navmenu-container ul a {
+        text-decoration: none;
+        size: 12px;
+        font-family: "Montserrat", sans-serif;
+        color: black; }
+
 /* Vendor */
 #outdated {
   display: none;
