@@ -1,1 +1,71 @@
 //SITE SETTINGS 
+//COLOR
+$primaryColor: #4737FF;
+$secondaryColor: #FA6950;
+$ternaryColor: #E4E3E3;
+$textColor: rgba(34, 34, 34, 1);
+
+// FONTS
+$primaryFont: 'Fira Sans', sans-serif;
+$ternaryFont: 'Open Sans', sans-serif;
+
+// TITLES
+.firstTitle{
+    font-size: 60px;
+    font-family: $primaryFont;
+}
+
+.sectionTitle{
+    font-size: 14px;
+    color: $ternaryColor;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: $ternaryFont;
+}
+
+.paragraphe{
+    font-size: 18px;
+    font-family: $ternaryFont;
+    line-height: 1.5rem;
+    color:$textColor;
+    font-weight: 300;
+}
+
+
+//SIZES
+$maxwidth: 1180px;
+
+//MARGIN & PADDING
+$marginsmall:1rem;
+$marginmedium:4rem;
+$marginbig:8rem;
+$margintall:10rem;
+.margin-bottom--small{margin-bottom:$marginsmall;}
+.margin-bottom--medium{margin-bottom:$marginmedium;}
+.margin-bottom--big{margin-bottom:$marginbig;}
+.margin-top--small{margin-top:$marginsmall;}
+.margin-top--medium{margin-top:$marginmedium;}
+.margin-top--big{margin-top:$marginbig;}
+.padding-bottom--small{padding-bottom:$marginsmall;}
+.padding-bottom--medium{padding-bottom:$marginmedium;}
+.padding-bottom--big{padding-bottom:$marginbig;}
+.padding-top--small{padding-top:$marginsmall;}
+.padding-top--medium{padding-top:$marginmedium;}
+.padding-top--big{padding-top:$marginbig;}
+
+//RESPONSIVE
+$break-small: 768px;
+$break-medium: 1025px;
+
+@mixin responsive($media) {
+  @if $media == tablet {
+    @media only screen and (min-width: $break-small) { @content; }
+  }
+  @else if $media == tablet-landscape {
+    @media only screen and (min-width: $break-small) and (orientation: landscape) { @content; }
+  }
+  @else if $media == laptop {
+    @media only screen and (min-width: $break-medium) { @content; }
+  }
+}
+/*@include responsive(tablet) { } */

@@ -1,0 +1,23 @@
+.acceuil_wrapper{
+    width:100%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    .acceuil_box_left{
+        margin-left: 5%;
+        .box_left_width{
+            width: 75%;
+        }
+    }
+    .acceuil_box_middle{
+        position: absolute;
+        top:120px;
+        right: 50%;
+        transform: translate(50%)   
+    }
+    .acceuil_box_right{
+        
+    }
+}
