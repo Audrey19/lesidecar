@@ -1,11 +1,28 @@
 .btn{
     display: inline-block;
     text-align: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     cursor: pointer;
+    font-family: $ternaryFont;
+    letter-spacing: 4px;
+    font-size: 14px;
+    &::after{
+        float: right;
+        position: relative;
+        content: "";
+        background: url('https://i.goopics.net/9qaKj.png') no-repeat center right;
+        background-size:contain;
+        display: inline-block;
+        width: 30px;
+        height: 15px;
+        left:0;
+    }
     &:hover{
-     
+     background-color: $secondaryColor;
+     &::after{
+        left:20px;
+    }
     }
 }
 
