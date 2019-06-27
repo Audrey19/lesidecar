@@ -3,26 +3,32 @@
 $primaryColor: #4737FF;
 $secondaryColor: #FA6950;
 $ternaryColor: #E4E3E3;
+$textColor: rgba(34, 34, 34, 1);
 
 // FONTS
-$primaryFont: 'Nunito Sans', sans-serif;
-$ternaryFont: 'Montserrat', sans-serif;
+$primaryFont: 'Fira Sans', sans-serif;
+$ternaryFont: 'Open Sans', sans-serif;
 
 // TITLES
 .firstTitle{
-    size: 40px;
+    font-size: 60px;
+    font-family: $primaryFont;
 }
 
 .sectionTitle{
-    size: 14px;
+    font-size: 14px;
     color: $ternaryColor;
     letter-spacing: 4px;
     text-transform: uppercase;
+    font-family: $ternaryFont;
 }
 
 .paragraphe{
-    size: 18px;
+    font-size: 18px;
     font-family: $ternaryFont;
+    line-height: 1.5rem;
+    color:$textColor;
+    font-weight: 300;
 }
 
 

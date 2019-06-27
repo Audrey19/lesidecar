@@ -241,17 +241,22 @@ template {
   display: none; }
 
 .firstTitle {
-  size: 40px; }
+  font-size: 60px;
+  font-family: "Fira Sans", sans-serif; }
 
 .sectionTitle {
-  size: 14px;
+  font-size: 14px;
   color: #E4E3E3;
   letter-spacing: 4px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif; }
 
 .paragraphe {
-  size: 18px;
-  font-family: "Montserrat", sans-serif; }
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+  color: #222222;
+  font-weight: 300; }
 
 .margin-bottom--small {
   margin-bottom: 1rem; }
@@ -298,9 +303,26 @@ body {
 .btn {
   display: inline-block;
   text-align: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 4px;
+  font-size: 14px; }
+  .btn::after {
+    float: right;
+    position: relative;
+    content: "";
+    background: url("https://i.goopics.net/9qaKj.png") no-repeat center right;
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    left: 0; }
+  .btn:hover {
+    background-color: #FA6950; }
+    .btn:hover::after {
+      left: 20px; }
 
 .btn_blue {
   color: white;
@@ -326,7 +348,7 @@ header {
   position: relative; }
   header .logo_name {
     size: 14px;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Open Sans", sans-serif; }
   header .logo_black {
     width: 50px;
     position: absolute;
@@ -350,8 +372,33 @@ header {
       header .menu-navmenu-container ul a {
         text-decoration: none;
         size: 12px;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Open Sans", sans-serif;
         color: black; }
+
+.acceuil_wrapper {
+  width: 100%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative; }
+  .acceuil_wrapper .acceuil_box_left {
+    margin-left: 5%; }
+    .acceuil_wrapper .acceuil_box_left .box_left_width {
+      width: 75%; }
+  .acceuil_wrapper .acceuil_box_middle {
+    position: absolute;
+    top: 120px;
+    right: 50%;
+    -webkit-transform: translate(50%);
+    -ms-transform: translate(50%);
+    transform: translate(50%); }
 
 /* Vendor */
 #outdated {

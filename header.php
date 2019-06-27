@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); echo '/style.css?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>">
-
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    
     <?php wp_head(); ?>
 
     <!--[if lt IE 9]>
