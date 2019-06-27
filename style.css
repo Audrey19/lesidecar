@@ -333,9 +333,15 @@ body {
   background-color: white; }
 
 /* Layout */
+.footergrey {
+  background: #11161B; }
+
+.footergrey_container {
+
 header {
   width: 90%;
   margin: 10px auto;
+
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +351,56 @@ header {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
+  width: 80%;
+  margin: auto; }
+
+.footerblack {
+  background: #000000; }
+
+.footerblack_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  padding: 62px 0px; }
+
+.greyitem p {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px; }
+
+.logofooter {
+  text-align: center;
+  color: white;
+  margin: 0px;
+  letter-spacing: 2.5px;
+  font-size: 19px; }
+
+.imgfooter {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px; }
+
+.greyitem {
+  padding: 20px 0px 50px 0px; }
+
+.fa {
+  padding: 0px;
+  font-size: 15px;
+  width: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: white; }
+
+.fa:hover {
+  opacity: 0.7; }
+=======
   position: relative; }
   header .logo_name {
     size: 14px;
@@ -399,6 +455,7 @@ header {
     -webkit-transform: translate(50%);
     -ms-transform: translate(50%);
     transform: translate(50%); }
+
 
 /* Vendor */
 #outdated {
