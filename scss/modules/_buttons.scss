@@ -7,7 +7,7 @@
     font-family: $ternaryFont;
     letter-spacing: 4px;
     font-size: 14px;
-    &::after{
+   /* &::after{
         float: right;
         position: relative;
         content: "";
@@ -17,18 +17,18 @@
         width: 30px;
         height: 15px;
         left:0;
-    }
-    &:hover{
-     background-color: $secondaryColor;
-     &::after{
-        left:20px;
-    }
-    }
+    }*/
 }
 
 .btn_blue{
     color:white;
     background-color: $primaryColor;
+    &:hover{
+        background-color: $secondaryColor;
+       /* &::after{
+           left:20px;
+       }*/
+       }
 }
 
 .btn_white{
