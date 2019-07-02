@@ -406,13 +406,17 @@ header {
   flex-direction: column;
   width: 20%;
   margin: auto;
-  padding: 62px 0px; }
+  padding: 44px 0px; }
 
-.greyitem p {
-  color: white;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  margin-bottom: 20px; }
+.greyitem {
+  width: 10%;
+  text-align: center;
+  padding: 20px 0px 50px 0px; }
+  .greyitem p {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px; }
 
 .logofooter {
   text-align: center;
@@ -425,9 +429,6 @@ header {
   text-align: center;
   color: white;
   margin-bottom: 10px; }
-
-.greyitem {
-  padding: 20px 0px 50px 0px; }
 
 .fa {
   padding: 0px;
@@ -545,7 +546,7 @@ header {
   position: relative; }
   .wrapper_service .triangle {
     position: absolute;
-    right: 0;
+    right: -5px;
     bottom: 0;
     z-index: -1; }
   .wrapper_service .service {
