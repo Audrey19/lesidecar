@@ -1,0 +1,90 @@
+.portfolio{
+    width: 90%;
+    margin: auto;
+    .portfolio_titles{
+        width:760px;
+    }
+    .portfolio_flexbox{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .flexbox_item{
+            position: relative;
+            height: 450px;
+            flex: 1 0 21%;
+            margin: 5px;
+            cursor: pointer;
+                &:hover{
+                    .hover_box{
+                        display: block;
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #1434E1;
+                        .hover_text{
+                            text-align: center;
+                            color:white;;
+                            position: absolute;
+                            width: 80%;
+                            left:50%;
+                            top:50%;
+                        transform: translate(-50%, -50%);
+                        h1{
+                            font-size: 36px;
+                            letter-spacing: 3px;
+                            font-family: $primaryFont;
+                            margin: 10px 0;
+                        }
+                        h2{
+                            font-size: 11px;
+                            letter-spacing: 2px;
+                            font-family: $ternaryFont;
+                            margin: 20px 0;
+                            text-transform: uppercase;
+                        }
+                        h3{
+                            font-size: 14px;
+                            font-family: $ternaryFont;
+                            line-height: 1.5rem;
+                            font-weight: 300;
+                            margin: 30px 0;
+                        }
+                    }
+                }
+                .fade-in {
+                        opacity: 1;
+                        animation-name: fadeInOpacity;
+                        animation-iteration-count: 1;
+                        animation-timing-function: ease-in;
+                        animation-duration: 1s;
+                }
+                    
+                    @keyframes fadeInOpacity {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            .hover_box{
+                    display: none;
+            }
+            .portfolio_image{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                display: block;
+               
+            }
+            
+        }
+       
+    }
+}

@@ -13,11 +13,12 @@ $ternaryFont: 'Open Sans', sans-serif;
 .firstTitle{
     font-size: 60px;
     font-family: $primaryFont;
+    margin: 20px 0;
 }
 
 .sectionTitle{
     font-size: 14px;
-    color: $ternaryColor;
+    color: grey;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-family: $ternaryFont;
