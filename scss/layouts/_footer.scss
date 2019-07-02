@@ -19,10 +19,13 @@
   flex-direction: column;
   width: 20%;
   margin: auto;
-  padding: 62px 0px;
+  padding: 44px 0px;
 }
-
 .greyitem{
+  width:10%;
+  text-align: center;
+  padding: 20px 0px 50px 0px;
+
   p{
     color: white;
     font-size: 12px;
@@ -43,10 +46,6 @@
   color:white;
   margin-bottom: 10px;
 
-}
-
-.greyitem{
-  padding: 20px 0px 50px 0px;
 }
 
 .fa {
