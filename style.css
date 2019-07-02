@@ -487,21 +487,23 @@ header {
     .portfolio .portfolio_flexbox .flexbox_item {
       position: relative;
       height: 450px;
-      -webkit-flex: 1 0 21%;
-      -ms-flex: 1 0 21%;
-      flex: 1 0 21%;
+      width: calc(25% - 10px);
+      overflow: hidden;
       margin: 5px;
       cursor: pointer; }
-      .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box {
+      .portfolio .portfolio_flexbox .flexbox_item .hover_box {
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0%;
+        left: 0%;
         z-index: 2;
         width: 100%;
         height: 100%;
-        background-color: #1434E1; }
-        .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box .hover_text {
+        background-color: rgba(20, 52, 225, 0);
+        opacity: 0;
+        visibility: hidden;
+        transition: 500ms ease-in-out all; }
+        .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text {
           text-align: center;
           color: white;
           position: absolute;
@@ -511,52 +513,85 @@ header {
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
-          .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box .hover_text h1 {
+          .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h1 {
             font-size: 36px;
             letter-spacing: 3px;
             font-family: "Fira Sans", sans-serif;
             margin: 10px 0; }
-          .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box .hover_text h2 {
+          .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h2 {
             font-size: 11px;
             letter-spacing: 2px;
             font-family: "Open Sans", sans-serif;
             margin: 20px 0;
             text-transform: uppercase; }
-          .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box .hover_text h3 {
+          .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h3 {
             font-size: 14px;
             font-family: "Open Sans", sans-serif;
             line-height: 1.5rem;
             font-weight: 300;
             margin: 30px 0; }
-      .portfolio .portfolio_flexbox .flexbox_item:hover .fade-in {
-        opacity: 1;
-        -webkit-animation-name: fadeInOpacity;
-        animation-name: fadeInOpacity;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s; }
-
-@-webkit-keyframes fadeInOpacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.8; } }
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.8; } }
-      .portfolio .portfolio_flexbox .flexbox_item .hover_box {
-        display: none; }
       .portfolio .portfolio_flexbox .flexbox_item .portfolio_image {
         object-fit: cover;
         width: 100%;
         height: 100%;
         display: block; }
+      .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box {
+        opacity: 1;
+        visibility: visible;
+        background-color: rgba(20, 52, 225, 0.85); }
+
+.wrapper_service {
+  width: 100%;
+  position: relative; }
+  .wrapper_service .triangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+  .wrapper_service .service {
+    width: 90%;
+    margin: auto;
+    z-index: 3; }
+    .wrapper_service .service .service_titles {
+      width: 760px; }
+    .wrapper_service .service .service_flexbox {
+      width: 80%;
+      margin: auto;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .wrapper_service .service .service_flexbox .service_item {
+        width: 32%;
+        background-color: white;
+        box-shadow: 13px 14px 37px -12px rgba(0, 0, 0, 0.36); }
+        .wrapper_service .service .service_flexbox .service_item .service_item_content {
+          width: 85%;
+          margin: auto;
+          text-align: center; }
+          .wrapper_service .service .service_flexbox .service_item .service_item_content h1 {
+            font-size: 36px;
+            letter-spacing: 3px;
+            font-family: "Fira Sans", sans-serif;
+            margin: 10px 0; }
+          .wrapper_service .service .service_flexbox .service_item .service_item_content h2 {
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-family: "Open Sans", sans-serif;
+            margin: 20px 0;
+            text-transform: uppercase;
+            color: #4737FF; }
+          .wrapper_service .service .service_flexbox .service_item .service_item_content p {
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.5rem;
+            font-weight: 300;
+            margin: 30px 0; }
 
 /* Vendor */
 #outdated {
