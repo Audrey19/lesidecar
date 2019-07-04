@@ -6,6 +6,7 @@
     justify-content: space-between;
     position: relative;
     .acceuil_box_left{
+
         margin-left: 5%;
         .hometitle{
             font-size:60px;
@@ -13,15 +14,13 @@
         .box_left_width{
             width: 750px;
         }
+
     }
     .acceuil_box_middle{
         position: absolute;
         top:120px;
         right: 50%;
         transform: translate(50%)
-    }
-    .acceuil_box_right{
-
     }
 }
 

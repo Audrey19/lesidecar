@@ -1,8 +1,10 @@
 <section class="acceuil_wrapper">
     <div class="acceuil_box_left">
         <div class="box_left_width margin-top--big">
+
             <h1 class="hometitle">Besoin d’un site Web?</h1>
             <p class="paragraphe">Nous concevons votre site web de A à Z. Du design à la mise en ligne.<br> Nous transformons vos besoins en solution concrète.</p>
+
             <a class="btn btn_blue margin-top--medium" href="">our services</a>
         </div>
     </div>

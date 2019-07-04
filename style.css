@@ -245,6 +245,9 @@ template {
   font-family: "Fira Sans", sans-serif;
   margin: 20px 0; }
 
+.small {
+  font-size: 18px; }
+
 .sectionTitle {
   font-size: 14px;
   color: grey;
@@ -252,12 +255,23 @@ template {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif; }
 
-.paragraphe {
+.sectionTitleSmall {
+  font-size: 11px;
+  color: grey;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif; }
+
+p {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5rem;
   color: #222222;
   font-weight: 300; }
+
+.smallparagraphe {
+  font-size: 12px;
+  line-height: 17px; }
 
 .margin-bottom--small {
   margin-bottom: 1rem; }
@@ -308,8 +322,8 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 4px;
-  font-size: 14px;
+  letter-spacing: 2px;
+  font-size: 11px;
   /* &::after{
         float: right;
         position: relative;
@@ -455,11 +469,13 @@ header {
   justify-content: space-between;
   position: relative; }
   .acceuil_wrapper .acceuil_box_left {
+
     margin-left: 5%; }
     .acceuil_wrapper .acceuil_box_left .hometitle {
       font-size: 60px; }
     .acceuil_wrapper .acceuil_box_left .box_left_width {
       width: 750px; }
+
   .acceuil_wrapper .acceuil_box_middle {
     position: absolute;
     top: 120px;
@@ -469,7 +485,7 @@ header {
     transform: translate(50%); }
 
 .portfolio {
-  width: 90%;
+  width: 75%;
   margin: auto; }
   .portfolio .portfolio_titles {
     width: 760px; }
@@ -489,7 +505,6 @@ header {
     flex-wrap: wrap; }
     .portfolio .portfolio_flexbox .flexbox_item {
       position: relative;
-      height: 450px;
       width: calc(25% - 10px);
       overflow: hidden;
       margin: 5px;
@@ -501,7 +516,7 @@ header {
         left: 0%;
         z-index: 2;
         width: 100%;
-        height: 100%;
+        height: 300px;
         background-color: rgba(20, 52, 225, 0);
         opacity: 0;
         visibility: hidden;
@@ -517,7 +532,7 @@ header {
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
           .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h1 {
-            font-size: 36px;
+            font-size: 22px;
             letter-spacing: 3px;
             font-family: "Fira Sans", sans-serif;
             margin: 10px 0; }
@@ -528,15 +543,15 @@ header {
             margin: 20px 0;
             text-transform: uppercase; }
           .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h3 {
-            font-size: 14px;
+            font-size: 12px;
             font-family: "Open Sans", sans-serif;
-            line-height: 1.5rem;
+            line-height: 17px;
             font-weight: 300;
             margin: 30px 0; }
       .portfolio .portfolio_flexbox .flexbox_item .portfolio_image {
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: 300px;
         display: block; }
       .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box {
         opacity: 1;
@@ -550,9 +565,10 @@ header {
     position: absolute;
     right: -5px;
     bottom: 0;
-    z-index: -1; }
+    z-index: -1;
+    height: 70%; }
   .wrapper_service .service {
-    width: 90%;
+    width: 78%;
     margin: auto;
     z-index: 3; }
     .wrapper_service .service .service_titles {
@@ -576,9 +592,12 @@ header {
         .wrapper_service .service .service_flexbox .service_item .service_item_content {
           width: 85%;
           margin: auto;
-          text-align: center; }
+          text-align: center;
+          padding-top: 2rem; }
+          .wrapper_service .service .service_flexbox .service_item .service_item_content img {
+            width: 50px; }
           .wrapper_service .service .service_flexbox .service_item .service_item_content h1 {
-            font-size: 36px;
+            font-size: 22px;
             letter-spacing: 3px;
             font-family: "Fira Sans", sans-serif;
             margin: 10px 0; }
@@ -592,9 +611,165 @@ header {
           .wrapper_service .service .service_flexbox .service_item .service_item_content p {
             font-size: 14px;
             font-family: "Open Sans", sans-serif;
-            line-height: 1.5rem;
+            line-height: 17px;
             font-weight: 300;
             margin: 30px 0; }
+
+
+.wrapper_approach {
+  width: 78%;
+  margin: auto; }
+  .wrapper_approach .approach_titles {
+    width: 760px; }
+
+.timeline {
+  position: relative;
+  width: 70%;
+  margin: 4rem auto; }
+  .timeline::before {
+    content: '';
+    background: #C5CAE9;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.timeline-item {
+  width: 100%; }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    padding: 40px 30px 10px 30px; }
+    .timeline-item:nth-child(even) .timeline-content .date {
+      right: auto;
+      left: 0; }
+    .timeline-item:nth-child(even) .timeline-content::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      left: -15px;
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #f5f5f5 transparent transparent; }
+  .timeline-item::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3); }
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5; }
+
+.timeline-center {
+  text-align: center;
+  position: relative;
+  background: #4737FF;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3); }
+  .timeline-center::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5; }
+  .timeline-center .logo_black {
+    width: 30px; }
+  .timeline-center h2 {
+    color: white; }
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #4737FF;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px; }
+
+.timeline-card {
+  padding: 0 !important; }
+  .timeline-card p {
+    padding: 20px;
+    margin: 0; }
+  .timeline-card a {
+    margin-left: 20px; }
+
+.timeline-item .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+  background-size: cover; }
+
+.timeline-img-header {
+  height: 100px;
+  position: relative; }
+  .timeline-img-header h2 {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 20px; }
+
+blockquote {
+  margin-top: 30px;
+  color: #FA6950;
+  border-left-color: #4737FF;
+  padding: 0 20px; }
+
+.date {
+  background: #FA6950;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px; }
+  .timeline .timeline-img {
+    left: 50px; }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px; }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none; }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent; } }
+
+.wrapper_service {
+  width: 100%;
+  position: relative; }
+
 
 .service {
   width: 78%;

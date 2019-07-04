@@ -4,6 +4,7 @@ $primaryColor: #4737FF;
 $secondaryColor: #FA6950;
 $ternaryColor: #E4E3E3;
 $textColor: rgba(34, 34, 34, 1);
+$light-primary: #C5CAE9;
 
 // FONTS
 $primaryFont: 'Fira Sans', sans-serif;
@@ -16,6 +17,10 @@ $ternaryFont: 'Open Sans', sans-serif;
     margin: 20px 0;
 }
 
+.small{
+  font-size: 18px;
+}
+
 .sectionTitle{
     font-size: 14px;
     color: grey;
@@ -23,13 +28,26 @@ $ternaryFont: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-family: $ternaryFont;
 }
+.sectionTitleSmall{
+  font-size: 11px;
+  color: grey;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: $ternaryFont;
+}
 
-.paragraphe{
+p{
     font-size: 15px;
+
     font-family: $ternaryFont;
     line-height: 1.5rem;
     color:$textColor;
     font-weight: 300;
+}
+
+.smallparagraphe{
+  font-size: 12px;
+  line-height: 17px;
 }
 
 
