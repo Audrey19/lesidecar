@@ -5,59 +5,59 @@
             <p>Le sideCar accompagne ses clients dans la réalisation de leur projet. Découvrez notre méthodologie en 5 étapes:</p>
         </div>
 
-    <section class="timeline margin-top--medium">
+    <section class="timeline">
     <div class="container">
-        <div class="timeline-item margin-bottom--small">
+        <div class="timeline-item">
         <div class="timeline-img"></div>
         <div class="timeline-content timeline-card js--fadeInRight">
             <div class="timeline-img-header ">
             <h2 class="firstTitle small">La Consultation Gratuite</h2>
             </div>
-            <div class="date sectionTitle">ETAPE 1</div>
+            <div class="date sectionTitleSmall">ETAPE 1</div>
             <p class="smallparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
         </div>
         </div>      
 
-        <div class="timeline-item margin-bottom--small">
+        <div class="timeline-item">
         <div class="timeline-img"></div>
         <div class="timeline-content timeline-card js--fadeInLeft">
             <div class="timeline-img-header">
             <h2 class="firstTitle small">L'Offre</h2>
             </div>
-            <div class="date sectionTitle">ETAPE 2</div>
+            <div class="date sectionTitleSmall">ETAPE 2</div>
             <p class="smallparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
         </div>
         </div>   
 
-        <div class="timeline-item margin-bottom--small">
+        <div class="timeline-item">
         <div class="timeline-img"></div>
         <div class="timeline-content timeline-card js--fadeInRight">
             <div class="timeline-img-header">
             <h2 class="firstTitle small">Le Design</h2>
             </div>
-            <div class="date sectionTitle">ETAPE3</div>
+            <div class="date sectionTitleSmall">ETAPE3</div>
             <p class="smallparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
         </div>
         </div>  
 
-        <div class="timeline-item margin-bottom--small">
+        <div class="timeline-item">
         <div class="timeline-img"></div>
         <div class="timeline-content timeline-card js--fadeInRight">
             <div class="timeline-img-header">
             <h2 class="firstTitle small">Le Développement Web</h2>
             </div>
-            <div class="date sectionTitle">ETAPE 4</div>
+            <div class="date sectionTitleSmall">ETAPE 4</div>
             <p class="smallparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
         </div>
         </div>  
 
-        <div class="timeline-item margin-bottom--small">
+        <div class="timeline-item">
         <div class="timeline-img"></div>
         <div class="timeline-content timeline-card js--fadeInRight">
             <div class="timeline-img-header">
             <h2 class="firstTitle small">Onboarding</h2>
             </div>
-            <div class="date sectionTitle">ETAPE 5</div>
+            <div class="date sectionTitleSmall">ETAPE 5</div>
             <p class="smallparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
         </div>
         </div> 

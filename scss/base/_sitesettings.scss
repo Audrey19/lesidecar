@@ -18,7 +18,7 @@ $ternaryFont: 'Open Sans', sans-serif;
 }
 
 .small{
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .sectionTitle{
@@ -28,7 +28,13 @@ $ternaryFont: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-family: $ternaryFont;
 }
-
+.sectionTitleSmall{
+  font-size: 11px;
+  color: grey;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: $ternaryFont;
+}
 
 p{
     font-size: 15px;
@@ -40,7 +46,8 @@ p{
 }
 
 .smallparagraphe{
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 
