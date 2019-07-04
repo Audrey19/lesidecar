@@ -1,0 +1,42 @@
+.collabo_flexbox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .image_gauche{
+        width: 42%;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .image_centre{
+        position: absolute;
+        top:15px;
+        left:225px;
+    }
+    .text_droite{
+        width: 40%;
+        .text_titles{
+            width: 65%;
+            h1{
+                margin:0;
+            }
+            .partenaire_flexbox{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                h2{
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                }
+                .name{
+                    margin: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+     
+    }
+}
