@@ -473,7 +473,9 @@ header {
     width: 50%; }
     .acceuil_wrapper .acceuil_box_left .hometitle {
       font-size: 60px; }
-  .acceuil_wrapper .acceuil_box_middle {
+
+  .acceuil_wrapper .acceuil_box_middle_item {
+
     position: absolute;
     top: 270px;
     right: 50%;
@@ -481,10 +483,11 @@ header {
     -ms-transform: translate(50%);
     transform: translate(50%); }
   .acceuil_wrapper .acceuil_box_right {
+
     width: 50%; }
 
 .portfolio {
-  width: 75%;
+  width: 78%;
   margin: auto; }
   .portfolio .portfolio_titles {
     width: 760px; }
@@ -810,6 +813,50 @@ blockquote {
     .team_mate_flexbox .mate_picture .mate_img {
       max-height: 545px;
       max-width: 470px; }
+
+.collabo_flexbox {
+  position: relative;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .collabo_flexbox .image_gauche {
+    width: 42%;
+    overflow: hidden; }
+    .collabo_flexbox .image_gauche img {
+      width: 100%; }
+  .collabo_flexbox .image_centre {
+    position: absolute;
+    top: 15px;
+    left: 225px; }
+  .collabo_flexbox .text_droite {
+    width: 40%; }
+    .collabo_flexbox .text_droite .text_titles {
+      width: 65%; }
+      .collabo_flexbox .text_droite .text_titles h1 {
+        margin: 0; }
+      .collabo_flexbox .text_droite .text_titles .partenaire_flexbox {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .collabo_flexbox .text_droite .text_titles .partenaire_flexbox h2 {
+          margin-top: 10px;
+          margin-bottom: 0; }
+        .collabo_flexbox .text_droite .text_titles .partenaire_flexbox .name {
+          margin: 0;
+          font-size: 12px; }
 
 /* Vendor */
 #outdated {
