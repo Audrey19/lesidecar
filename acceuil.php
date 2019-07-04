@@ -9,9 +9,9 @@
         </div>
     </div>
     <div class="acceuil_box_middle">
-        <img class="acceuil_box_middle" src="<?php bloginfo('template_url'); ?>/assets/images/Video.png" alt="video">
+        <img class="acceuil_box_middle_item" src="<?php bloginfo('template_url'); ?>/assets/images/Video.png" alt="video">
     </div>
     <div class="acceuil_box_right">
-        <img class="acceuil_box_right" src="<?php bloginfo('template_url'); ?>/assets/images/profile_picture.png" alt="profile">
+        <img class="acceuil_box_right_item" src="<?php bloginfo('template_url'); ?>/assets/images/profile_picture.png" alt="profile">
     </div>
 </section>
