@@ -7,9 +7,9 @@
             <p class="paragraphe">Nous aimons explorer de nouvelles choses, c’est pourquoi nous couvrons de nombreuses matières.</p>
         </div>
 
-        <div class="service_flexbox padding-top--medium padding-bottom--medium">
+        <div class="service_flexbox padding-top--medium padding-bottom--small">
             <div class="service_item">
-                <div class="service_item_content padding-top--medium ">
+                <div class="service_item_content padding-top--medium padding-bottom--small">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/layout.png" alt="logo">
                     <h2>prix $$</h2>
                     <h1>Site web avec template</h1>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="service_item">
-                <div class="service_item_content padding-top--medium ">
+                <div class="service_item_content padding-top--medium padding-bottom--small">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/graphic-design.png" alt="logo">
                     <h2>prix $$</h2>
                     <h1>Site web avec template</h1>
@@ -27,7 +27,8 @@
                 </div>
             </div>
             <div class="service_item">
-                <div class="service_item_content padding-top--medium ">
+                <div class="service_item_content padding-top--medium padding-bottom--small">
+
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/computer.png" alt="logo">
                     <h2>prix $$</h2>
                     <h1>Site web avec template</h1>
