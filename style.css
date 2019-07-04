@@ -469,7 +469,13 @@ header {
   justify-content: space-between;
   position: relative; }
   .acceuil_wrapper .acceuil_box_left {
-    margin: 0 5%; }
+
+    margin-left: 5%; }
+    .acceuil_wrapper .acceuil_box_left .hometitle {
+      font-size: 60px; }
+    .acceuil_wrapper .acceuil_box_left .box_left_width {
+      width: 750px; }
+
   .acceuil_wrapper .acceuil_box_middle {
     position: absolute;
     top: 120px;
@@ -608,6 +614,7 @@ header {
             line-height: 17px;
             font-weight: 300;
             margin: 30px 0; }
+
 
 .wrapper_approach {
   width: 78%;
@@ -763,6 +770,7 @@ blockquote {
   width: 100%;
   position: relative; }
 
+
 .service {
   width: 78%;
   margin: auto;
@@ -777,14 +785,23 @@ blockquote {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .team_mate_flexbox .audrey {
+    padding-right: 5%; }
+  .team_mate_flexbox .evrard {
+    padding-left: 5%; }
   .team_mate_flexbox .mate_description {
     box-sizing: border-box;
     width: 54%;
-    overflow: hidden;
-    padding: 0 5%; }
+    overflow: hidden; }
+    .team_mate_flexbox .mate_description .paragraphe {
+      margin-top: 0px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 25px; }
     .team_mate_flexbox .mate_description h2 {
       font-size: 19.4806px;
-      line-height: 28px; }
+      line-height: 28px;
+      margin-top: 90px; }
     .team_mate_flexbox .mate_description h3 {
       font-weight: bold;
       font-size: 12.3968px;
@@ -792,11 +809,14 @@ blockquote {
   .team_mate_flexbox .mate_picture {
     box-sizing: border-box;
     width: 46%;
-    overflow: hidden;
-    padding: 0 7%; }
+    overflow: hidden; }
+    .team_mate_flexbox .mate_picture .aud {
+      float: right; }
+    .team_mate_flexbox .mate_picture .ev {
+      float: left; }
     .team_mate_flexbox .mate_picture .mate_img {
       max-height: 545px;
-      max-width: 445px; }
+      max-width: 470px; }
 
 /* Vendor */
 #outdated {
