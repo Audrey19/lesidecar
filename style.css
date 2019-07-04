@@ -241,7 +241,7 @@ template {
   display: none; }
 
 .firstTitle {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Fira Sans", sans-serif;
   margin: 20px 0; }
 
@@ -253,7 +253,7 @@ template {
   font-family: "Open Sans", sans-serif; }
 
 .paragraphe {
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5rem;
   color: #222222;
@@ -599,7 +599,7 @@ header {
   position: relative; }
 
 .service {
-  width: 90%;
+  width: 78%;
   margin: auto;
   z-index: 3; }
   .service .service_titles {
