@@ -28,6 +28,7 @@
             </div>
             <div class="service_item">
                 <div class="service_item_content padding-top--medium padding-bottom--small">
+
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/computer.png" alt="logo">
                     <h2>prix $$</h2>
                     <h1>Site web avec template</h1>

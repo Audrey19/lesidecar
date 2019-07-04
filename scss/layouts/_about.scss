@@ -1,0 +1,45 @@
+.wrapper_service{
+    width: 100%;
+    position: relative;
+  }
+.service{
+    width: 78%;
+    margin: auto;
+    z-index: 3;
+ .service_titles{
+    width:760px;
+ }
+}
+
+.team_mate_flexbox{
+    display: flex;
+    justify-content: space-between;
+    .mate_description{
+      box-sizing:border-box;
+      width: 54%;
+      overflow: hidden;
+      padding: 0 5%;
+        h2{
+          font-size: 19.4806px;
+          line-height: 28px;
+        }
+        h3{
+          font-weight: bold;
+          font-size: 12.3968px;
+          line-height: 25px;
+        }
+    }
+    .mate_picture{
+      box-sizing:border-box;
+      width:46%;
+      overflow: hidden;
+      padding: 0 7%;
+      .mate_img{
+        max-height: 545px;
+        max-width: 445px;
+
+      }
+
+    }
+ }
+

@@ -241,7 +241,7 @@ template {
   display: none; }
 
 .firstTitle {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Fira Sans", sans-serif;
   margin: 20px 0; }
 
@@ -255,8 +255,8 @@ template {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif; }
 
-p {
-  font-size: 18px;
+p{
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5rem;
   color: #222222;
@@ -412,13 +412,17 @@ header {
   flex-direction: column;
   width: 20%;
   margin: auto;
-  padding: 62px 0px; }
+  padding: 44px 0px; }
 
-.greyitem p {
-  color: white;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  margin-bottom: 20px; }
+.greyitem {
+  width: 10%;
+  text-align: center;
+  padding: 20px 0px 50px 0px; }
+  .greyitem p {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px; }
 
 .logofooter {
   text-align: center;
@@ -431,9 +435,6 @@ header {
   text-align: center;
   color: white;
   margin-bottom: 10px; }
-
-.greyitem {
-  padding: 20px 0px 50px 0px; }
 
 .fa {
   padding: 0px;
@@ -744,6 +745,46 @@ blockquote {
     left: -15px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #f5f5f5 transparent transparent; } }
+=======
+.wrapper_service {
+  width: 100%;
+  position: relative; }
+
+.service {
+  width: 78%;
+  margin: auto;
+  z-index: 3; }
+  .service .service_titles {
+    width: 760px; }
+
+.team_mate_flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .team_mate_flexbox .mate_description {
+    box-sizing: border-box;
+    width: 54%;
+    overflow: hidden;
+    padding: 0 5%; }
+    .team_mate_flexbox .mate_description h2 {
+      font-size: 19.4806px;
+      line-height: 28px; }
+    .team_mate_flexbox .mate_description h3 {
+      font-weight: bold;
+      font-size: 12.3968px;
+      line-height: 25px; }
+  .team_mate_flexbox .mate_picture {
+    box-sizing: border-box;
+    width: 46%;
+    overflow: hidden;
+    padding: 0 7%; }
+    .team_mate_flexbox .mate_picture .mate_img {
+      max-height: 545px;
+      max-width: 445px; }
+
 
 /* Vendor */
 #outdated {
