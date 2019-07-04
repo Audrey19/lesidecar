@@ -594,6 +594,46 @@ header {
             font-weight: 300;
             margin: 30px 0; }
 
+.wrapper_service {
+  width: 100%;
+  position: relative; }
+
+.service {
+  width: 90%;
+  margin: auto;
+  z-index: 3; }
+  .service .service_titles {
+    width: 760px; }
+
+.team_mate_flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .team_mate_flexbox .mate_description {
+    box-sizing: border-box;
+    width: 50%;
+    overflow: hidden;
+    padding: 0 7%; }
+    .team_mate_flexbox .mate_description h2 {
+      font-size: 19.4806px;
+      line-height: 28px;
+      margin-top: 130px; }
+    .team_mate_flexbox .mate_description h3 {
+      font-weight: bold;
+      font-size: 12.3968px;
+      line-height: 25px; }
+  .team_mate_flexbox .mate_picture {
+    box-sizing: border-box;
+    width: 50%;
+    overflow: hidden;
+    padding: 0 7%; }
+    .team_mate_flexbox .mate_picture .mate_img {
+      max-height: 545px;
+      max-width: 445px; }
+
 /* Vendor */
 #outdated {
   display: none;
