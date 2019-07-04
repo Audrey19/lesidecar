@@ -469,20 +469,19 @@ header {
   justify-content: space-between;
   position: relative; }
   .acceuil_wrapper .acceuil_box_left {
-
-    margin-left: 5%; }
+    margin-left: 11%;
+    width: 50%; }
     .acceuil_wrapper .acceuil_box_left .hometitle {
       font-size: 60px; }
-    .acceuil_wrapper .acceuil_box_left .box_left_width {
-      width: 750px; }
-
   .acceuil_wrapper .acceuil_box_middle {
     position: absolute;
-    top: 120px;
+    top: 270px;
     right: 50%;
     -webkit-transform: translate(50%);
     -ms-transform: translate(50%);
     transform: translate(50%); }
+  .acceuil_wrapper .acceuil_box_right {
+    width: 50%; }
 
 .portfolio {
   width: 75%;
@@ -614,7 +613,6 @@ header {
             line-height: 17px;
             font-weight: 300;
             margin: 30px 0; }
-
 
 .wrapper_approach {
   width: 78%;
@@ -765,11 +763,6 @@ blockquote {
     left: -15px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #f5f5f5 transparent transparent; } }
-
-.wrapper_service {
-  width: 100%;
-  position: relative; }
-
 
 .service {
   width: 78%;
