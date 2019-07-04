@@ -246,7 +246,7 @@ template {
   margin: 20px 0; }
 
 .small {
-  font-size: 30px; }
+  font-size: 18px; }
 
 .sectionTitle {
   font-size: 14px;
@@ -255,7 +255,14 @@ template {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif; }
 
-p{
+.sectionTitleSmall {
+  font-size: 11px;
+  color: grey;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif; }
+
+p {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5rem;
@@ -263,7 +270,8 @@ p{
   font-weight: 300; }
 
 .smallparagraphe {
-  font-size: 14px; }
+  font-size: 12px;
+  line-height: 17px; }
 
 .margin-bottom--small {
   margin-bottom: 1rem; }
@@ -314,8 +322,8 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 4px;
-  font-size: 14px;
+  letter-spacing: 2px;
+  font-size: 11px;
   /* &::after{
         float: right;
         position: relative;
@@ -471,7 +479,7 @@ header {
     transform: translate(50%); }
 
 .portfolio {
-  width: 90%;
+  width: 75%;
   margin: auto; }
   .portfolio .portfolio_titles {
     width: 760px; }
@@ -491,7 +499,6 @@ header {
     flex-wrap: wrap; }
     .portfolio .portfolio_flexbox .flexbox_item {
       position: relative;
-      height: 450px;
       width: calc(25% - 10px);
       overflow: hidden;
       margin: 5px;
@@ -503,7 +510,7 @@ header {
         left: 0%;
         z-index: 2;
         width: 100%;
-        height: 100%;
+        height: 300px;
         background-color: rgba(20, 52, 225, 0);
         opacity: 0;
         visibility: hidden;
@@ -519,7 +526,7 @@ header {
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
           .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h1 {
-            font-size: 36px;
+            font-size: 22px;
             letter-spacing: 3px;
             font-family: "Fira Sans", sans-serif;
             margin: 10px 0; }
@@ -530,15 +537,15 @@ header {
             margin: 20px 0;
             text-transform: uppercase; }
           .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h3 {
-            font-size: 14px;
+            font-size: 12px;
             font-family: "Open Sans", sans-serif;
-            line-height: 1.5rem;
+            line-height: 17px;
             font-weight: 300;
             margin: 30px 0; }
       .portfolio .portfolio_flexbox .flexbox_item .portfolio_image {
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: 300px;
         display: block; }
       .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box {
         opacity: 1;
@@ -552,9 +559,10 @@ header {
     position: absolute;
     right: -5px;
     bottom: 0;
-    z-index: -1; }
+    z-index: -1;
+    height: 70%; }
   .wrapper_service .service {
-    width: 90%;
+    width: 78%;
     margin: auto;
     z-index: 3; }
     .wrapper_service .service .service_titles {
@@ -578,9 +586,12 @@ header {
         .wrapper_service .service .service_flexbox .service_item .service_item_content {
           width: 85%;
           margin: auto;
-          text-align: center; }
+          text-align: center;
+          padding-top: 2rem; }
+          .wrapper_service .service .service_flexbox .service_item .service_item_content img {
+            width: 50px; }
           .wrapper_service .service .service_flexbox .service_item .service_item_content h1 {
-            font-size: 36px;
+            font-size: 22px;
             letter-spacing: 3px;
             font-family: "Fira Sans", sans-serif;
             margin: 10px 0; }
@@ -594,18 +605,20 @@ header {
           .wrapper_service .service .service_flexbox .service_item .service_item_content p {
             font-size: 14px;
             font-family: "Open Sans", sans-serif;
-            line-height: 1.5rem;
+            line-height: 17px;
             font-weight: 300;
             margin: 30px 0; }
 
 .wrapper_approach {
-  width: 90%;
+  width: 78%;
   margin: auto; }
   .wrapper_approach .approach_titles {
     width: 760px; }
 
 .timeline {
-  position: relative; }
+  position: relative;
+  width: 70%;
+  margin: 4rem auto; }
   .timeline::before {
     content: '';
     background: #C5CAE9;
@@ -674,7 +687,7 @@ header {
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #f5f5f5; }
   .timeline-center .logo_black {
-    width: 50px; }
+    width: 30px; }
   .timeline-center h2 {
     color: white; }
 
@@ -745,7 +758,7 @@ blockquote {
     left: -15px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #f5f5f5 transparent transparent; } }
-=======
+
 .wrapper_service {
   width: 100%;
   position: relative; }
@@ -784,7 +797,6 @@ blockquote {
     .team_mate_flexbox .mate_picture .mate_img {
       max-height: 545px;
       max-width: 445px; }
-
 
 /* Vendor */
 #outdated {
