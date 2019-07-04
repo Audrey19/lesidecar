@@ -1,7 +1,4 @@
-.wrapper_service{
-    width: 100%;
-    position: relative;
-  }
+
 .service{
     width: 78%;
     margin: auto;
@@ -14,32 +11,54 @@
 .team_mate_flexbox{
     display: flex;
     justify-content: space-between;
+    .audrey{
+          padding-right: 5%;
+        }
+    .evrard{
+          padding-left:5%;
+        }
     .mate_description{
       box-sizing:border-box;
       width: 54%;
       overflow: hidden;
-      padding: 0 5%;
+        .paragraphe {
+        margin-top: 0px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        }
         h2{
           font-size: 19.4806px;
           line-height: 28px;
+          margin-top: 90px;
         }
         h3{
           font-weight: bold;
           font-size: 12.3968px;
           line-height: 25px;
         }
+
+
     }
+
     .mate_picture{
       box-sizing:border-box;
       width:46%;
       overflow: hidden;
-      padding: 0 7%;
+      .aud{
+        float: right;
+        }
+      .ev{
+        float:left;
+        }
       .mate_img{
         max-height: 545px;
-        max-width: 445px;
+        max-width: 470px;
+
+        }
 
       }
 
     }
- }
+
 
