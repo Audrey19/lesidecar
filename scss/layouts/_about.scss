@@ -9,17 +9,21 @@
 }
 
 .team_mate_flexbox{
-    display: flex;
-    justify-content: space-between;
+    @include responsive(laptop){
+      display: flex;
+      justify-content: space-between;
+      flex-direction:row;
+
     .audrey{
           padding-right: 5%;
         }
     .evrard{
           padding-left:5%;
         }
+      }
     .mate_description{
       box-sizing:border-box;
-      width: 54%;
+      //width: 54%;
       overflow: hidden;
         .paragraphe {
         margin-top: 0px;
@@ -37,13 +41,11 @@
           font-size: 12.3968px;
           line-height: 25px;
         }
-
-
     }
 
     .mate_picture{
       box-sizing:border-box;
-      width:46%;
+      //width:46%;
       overflow: hidden;
       .aud{
         float: right;
@@ -60,5 +62,7 @@
       }
 
     }
+@include responsive(laptop)
 
+@include responsive(tablet)
 
