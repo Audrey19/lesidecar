@@ -476,9 +476,7 @@ header {
     width: 50%; }
     .acceuil_wrapper .acceuil_box_left .hometitle {
       font-size: 60px; }
-
   .acceuil_wrapper .acceuil_box_middle_item {
-
     position: absolute;
     top: 270px;
     right: 50%;
@@ -486,7 +484,6 @@ header {
     -ms-transform: translate(50%);
     transform: translate(50%); }
   .acceuil_wrapper .acceuil_box_right {
-
     width: 50%; }
 
 .portfolio {
@@ -777,45 +774,49 @@ blockquote {
   .service .service_titles {
     width: 760px; }
 
-.team_mate_flexbox {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .team_mate_flexbox .audrey {
-    padding-right: 5%; }
-  .team_mate_flexbox .evrard {
-    padding-left: 5%; }
-  .team_mate_flexbox .mate_description {
-    box-sizing: border-box;
-    width: 54%;
-    overflow: hidden; }
-    .team_mate_flexbox .mate_description .paragraphe {
-      margin-top: 0px;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 25px; }
-    .team_mate_flexbox .mate_description h2 {
-      font-size: 19.4806px;
-      line-height: 28px;
-      margin-top: 90px; }
-    .team_mate_flexbox .mate_description h3 {
-      font-weight: bold;
-      font-size: 12.3968px;
-      line-height: 25px; }
-  .team_mate_flexbox .mate_picture {
-    box-sizing: border-box;
-    width: 46%;
-    overflow: hidden; }
-    .team_mate_flexbox .mate_picture .aud {
-      float: right; }
-    .team_mate_flexbox .mate_picture .ev {
-      float: left; }
-    .team_mate_flexbox .mate_picture .mate_img {
-      max-height: 545px;
-      max-width: 470px; }
+@media only screen and (min-width: 1025px) {
+  .team_mate_flexbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .team_mate_flexbox .audrey {
+      padding-right: 5%; }
+    .team_mate_flexbox .evrard {
+      padding-left: 5%; } }
+
+.team_mate_flexbox .mate_description {
+  box-sizing: border-box;
+  overflow: hidden; }
+  .team_mate_flexbox .mate_description .paragraphe {
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px; }
+  .team_mate_flexbox .mate_description h2 {
+    font-size: 19.4806px;
+    line-height: 28px;
+    margin-top: 90px; }
+  .team_mate_flexbox .mate_description h3 {
+    font-weight: bold;
+    font-size: 12.3968px;
+    line-height: 25px; }
+
+.team_mate_flexbox .mate_picture {
+  box-sizing: border-box;
+  overflow: hidden; }
+  .team_mate_flexbox .mate_picture .aud {
+    float: right; }
+  .team_mate_flexbox .mate_picture .ev {
+    float: left; }
+  .team_mate_flexbox .mate_picture .mate_img {
+    max-height: 545px;
+    max-width: 470px; }
 
 .collabo_flexbox {
   position: relative;
