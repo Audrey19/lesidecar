@@ -67,7 +67,7 @@
             <div class="padding-top--small padding-bottom--small">
             <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_black.png" alt="logo">
             <h2 class="firstTitle small">Vous souhaitez prendre une consutation gratuite?</h2>
-            <a href="" class="btn btn_white margin-top--small">booker un RDV</a>
+            <a href="" class="btn btn_white margin-top--small">Booker un RDV</a>
             </div>
         </div>
         </div>

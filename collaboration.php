@@ -2,7 +2,7 @@
             <h3 class="sectionTitle">- collaboration</h3>
 </section>
 
-<section class="collabo_flexbox margin-top--medium">
+<section class="collabo_flexbox margin-top--medium padding-bottom--big">
             <div class="image_gauche">
                 <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/placeholder1.png" alt="logo">
             </div>
