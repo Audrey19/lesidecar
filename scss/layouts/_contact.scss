@@ -1,0 +1,59 @@
+.contact_flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .box_right{
+        width: 50%;
+        .texte{
+            width: 70%;
+            .partenaire_flexbox{
+                display: flex;
+                flex-direction: row;
+                h2{
+                    margin-top: 1.5rem;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+    .box_left{
+        width: 45%;
+        background-color: white;
+        .box_margin{
+            width: 80%;
+            margin: auto;
+        } 
+    }
+}
+
+.wpcf7-form{
+    input{
+        height: 2rem;;
+        width: 362px;
+        font-family: $primaryFont;
+        font-size: 11px;
+        padding-left: 5px;
+        &:hover{
+            border:2px solid $primaryColor;
+           }
+    }
+    textarea{
+        width: 362px;
+        font-family: $primaryFont;
+        font-size: 11px;
+        padding-left: 5px;
+        padding-top: 10px;
+        &:hover{
+            border:2px solid $primaryColor;
+           }
+    }
+        .wpcf7-submit{
+            width: 100%;
+            border: none;
+            height: auto;
+            &:hover{
+                border:none;
+               }
+    }
+   
+}

@@ -1,7 +1,7 @@
 
    <section class="service padding-top--big">
         <div class="service_titles">
-            <h3 class="sectionTitle">- services</h3>
+            <h3 class="sectionTitle">- A propos</h3>
               <h1 class="firstTitle">Decouvrez qui nous sommes</h1>
               <p class="paragraphe">Le sidecar, c’est l’histoire d’un couple dont l’envie de creer, d’entprendre et la soif de liberté.. accompagner le client pour mener à bon port, amovible, 2 comme le sidecar...</p>
         </div>
