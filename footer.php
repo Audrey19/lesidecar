@@ -29,7 +29,16 @@
   </div>
 </section>	<!-- MAIN APP -->
 
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
+
+<script
+    src="https://code.jquery.com/jquery-1.12.3.js"
+    integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="
+  crossorigin="anonymous"></script>
+
+  <script src="<?php bloginfo('stylesheet_directory');?>/assets/js/script/script.js"></script>
 
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); echo '/main.js?' . filemtime( get_stylesheet_directory() . '/main.js'); ?>"></script>
 	<?php wp_footer(); ?>
