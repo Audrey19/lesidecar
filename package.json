@@ -25,5 +25,8 @@
     "gulp-notify": "*",
     "gulp-sass": "*",
     "gulp-uglify": "*"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.5"
   }
 }
