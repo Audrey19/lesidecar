@@ -1,32 +1,62 @@
 .collabo_flexbox{
-    position: relative;
     width: 100%;
+    @include responsive(laptop){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 8rem;
+    }
     .image_gauche{
-        width: 42%;
-        overflow: hidden;
+        width: 100%;
+        position: relative;
         img{
             width: 100%;
         }
-    }
-    .image_centre{
-        position: absolute;
-        top:15px;
-        left:225px;
+        @include responsive(laptop){
+        width: 42%;
+            img{
+                width: 100%;
+            }
+        }
+        .image_centre{
+            position: absolute;
+            right:0;
+            top: 50px;
+            width: 260px;;
+            img{
+                width: 100%;
+            }
+            @include responsive(laptop){
+            position: absolute;
+            top:50px;
+            right:-5px;
+            } 
+        }
     }
     .text_droite{
+        width: 75%;
+        margin: auto;
+        @include responsive(laptop){
         width: 40%;
+        }
         .text_titles{
+            margin-top: 3rem;
+            width: 100%;
+            text-align: center;
+            @include responsive(laptop){
+            margin-top: 0;
             width: 65%;
+            texte-align:left;
+            }
             h1{
                 margin:0;
             }
             .partenaire_flexbox{
+                @include responsive(laptop){
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                }
                 h2{
                     margin-top: 10px;
                     margin-bottom: 0;

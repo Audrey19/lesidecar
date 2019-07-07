@@ -1,32 +1,35 @@
 .acceuil_wrapper{
     width:100%;
     margin:auto;
+    @include responsive(laptop){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
+    }
     .acceuil_box_left{
         margin-left: 11%;
-
+        @include responsive(laptop){
         width:50%;
-
+        }
+        .box_left_width_item{
+            width: 70%;
+        }
         .hometitle{
             font-size:60px;
-}
-        .box_left_width{
-
-        }
-
-    }
-    .acceuil_box_middle_item{
-        position: absolute;
-        top:270px;
-        right: 50%;
-        transform: translate(50%)
+        }   
     }
     .acceuil_box_right{
-
+        position: relative;
         width:50%;
+        img{
+        width: 100%;
+        object-fit: cover;
+        }
+        .acceuil_box_middle{
+            position: absolute;
+            bottom:-100px;
+            left:-200px;
+        }
       }
 }
 

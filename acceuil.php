@@ -8,10 +8,10 @@
             <a class="btn btn_blue margin-top--medium" href="">our services</a>
         </div>
     </div>
-    <div class="acceuil_box_middle">
-        <img class="acceuil_box_middle_item" src="<?php bloginfo('template_url'); ?>/assets/images/Video.png" alt="video">
-    </div>
     <div class="acceuil_box_right">
         <img class="acceuil_box_right_item" src="<?php bloginfo('template_url'); ?>/assets/images/profile_picture.png" alt="profile">
+        <div class="acceuil_box_middle">
+            <img class="acceuil_box_middle_item" src="<?php bloginfo('template_url'); ?>/assets/images/Video2.png" alt="video">
+        </div>
     </div>
 </section>

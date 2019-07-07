@@ -25,4 +25,21 @@
   <p class="logo_name">LE SIDECAR</p>
   <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_black.png" alt="logo">
   <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?>
+
+  <button class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+        <script>
+          var hamburger = document.querySelector(".hamburger");
+          var navigation = document.querySelector("#menu_container");
+          var header = document.querySelector("#responsive_header");
+          hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
+            navigation.classList.toggle("is-active");
+            header.classList.toggle("is-active");
+          });
+        </script>
+      </button>
+      
 </header>

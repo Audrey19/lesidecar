@@ -1,11 +1,19 @@
 .contact_flexbox{
+    @include responsive(laptop){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    }
     .box_right{
+        width:100%;
+        @include responsive(laptop){
         width: 50%;
+        }
         .texte{
+            @include responsive(laptop){
             width: 70%;
+            }
+            width: 90%;
             .partenaire_flexbox{
                 display: flex;
                 flex-direction: row;
@@ -17,10 +25,13 @@
         }
     }
     .box_left{
+        @include responsive(laptop){
         width: 45%;
+        }
+        width: 100%;
         background-color: white;
         .box_margin{
-            width: 80%;
+            width: 70%;
             margin: auto;
         } 
     }
@@ -29,7 +40,7 @@
 .wpcf7-form{
     input{
         height: 2rem;;
-        width: 362px;
+        width: 100%;
         font-family: $primaryFont;
         font-size: 11px;
         padding-left: 5px;
@@ -38,7 +49,7 @@
            }
     }
     textarea{
-        width: 362px;
+        width: 100%;
         font-family: $primaryFont;
         font-size: 11px;
         padding-left: 5px;
@@ -48,6 +59,7 @@
            }
     }
         .wpcf7-submit{
+            padding: 1rem 0;
             width: 100%;
             border: none;
             height: auto;

@@ -2,15 +2,18 @@
     width: 78%;
     margin: auto;
     .approach_titles{
-        width:760px;
+		@include responsive(laptop){
+		width:760px;
+		}
     }
 }
 
 .timeline {
     position: relative;
-    width: 70%;
-    margin: 4rem auto;
-
+	margin: 4rem auto;
+	@include responsive(laptop){
+	width: 70%;
+	}
 	&::before {
 		content: '';
 		background:$light-primary;
@@ -24,7 +27,10 @@
 
 .timeline-item {
 	width: 100%;
-
+	margin-bottom: 1rem;
+	@include responsive(laptop){
+		margin-bottom: 0;
+		}
 	&:nth-child(even) {
 
 		.timeline-content {
