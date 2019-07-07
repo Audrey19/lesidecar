@@ -2,15 +2,13 @@
             <h3 class="sectionTitle">- collaboration</h3>
 </section>
 
-<section class="collabo_flexbox margin-top--medium padding-bottom--big">
+<section class="collabo_flexbox margin-top--medium">
             <div class="image_gauche">
                 <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/placeholder1.png" alt="logo">
+                <div class="image_centre">
+                    <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/Placeholder2bis.png" alt="logo">
+                </div>
             </div>
-           
-            <div class="image_centre">
-                <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/placeholder2.png" alt="logo">
-            </div>
-            
             <div class="text_droite">
                 <div class="text_titles">
                     <h1 class="firstTitle">Nos partenaires</h1>

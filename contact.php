@@ -1,4 +1,4 @@
-<section class="wrapper_approach padding-top--big padding-bottom--medium">
+<section class="wrapper_approach padding-top--medium padding-bottom--medium">
         <div class="approach_titles">
             <h3 class="sectionTitle">- contact</h3>
             <h1 class="firstTitle">Demander un devis</h1>
@@ -11,7 +11,7 @@
                                     <img class="partenaire" src="<?php bloginfo('template_url'); ?>/assets/images/mail.png" alt="partenaire">
                                     <h2 class="sectionTitle">TEL 0472 51 22 12</h2>           
                     </div>
-                    <div class="partenaire_flexbox margin-top--small">
+                    <div class="partenaire_flexbox margin-top--small margin-bottom--medium">
                                     <img class="partenaire" src="<?php bloginfo('template_url'); ?>/assets/images/mail.png" alt="partenaire">
                                     <h2 class="sectionTitle">MAIL @lesidecar.com</h2>           
                     </div>
