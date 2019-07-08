@@ -1,4 +1,6 @@
+
 .acceuil_wrapper{
+    position: relative;
     width:100%;
     margin:auto;
     @include responsive(laptop){
@@ -7,28 +9,57 @@
     justify-content: space-between;
     }
     .acceuil_box_left{
-        margin-left: 11%;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        z-index: 3;
         @include responsive(laptop){
+        text-align: left;
+        margin-left: 11%;
         width:50%;
-        }
-        .box_left_width_item{
-            width: 70%;
+            .box_left_width_item{
+                width: 70%;
+                @include responsive(laptop){
+                    margin-top: 8rem;
+                a{
+                    margin-top: 4rem;
+                }
+                }
+            }
         }
         .hometitle{
             font-size:60px;
-        }   
+        }  
+    }
+    .parallax{
+    background-image: url("assets/images/profile_picture.png");
+    background-size: contain;
+    height: 400px; 
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+        @include responsive(laptop){
+            display:none;
+        }
     }
     .acceuil_box_right{
+        display:none;
+        width:100%;
+        @include responsive(laptop){
+        display:block;
         position: relative;
         width:50%;
-        img{
-        width: 100%;
-        object-fit: cover;
         }
+            img{
+            width: 100%;
+            object-fit: cover;
+            }
         .acceuil_box_middle{
+            @include responsive(laptop){
             position: absolute;
             bottom:-100px;
             left:-200px;
+            }
         }
       }
 }

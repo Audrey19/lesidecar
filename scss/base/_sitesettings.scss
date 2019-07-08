@@ -6,6 +6,12 @@ $ternaryColor: #E4E3E3;
 $textColor: rgba(34, 34, 34, 1);
 $light-primary: #C5CAE9;
 
+//BODY
+.page{
+  width:100%;
+  overflow: hidden;
+}
+
 // FONTS
 $primaryFont: 'Fira Sans', sans-serif;
 $ternaryFont: 'Open Sans', sans-serif;

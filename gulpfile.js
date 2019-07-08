@@ -36,7 +36,7 @@ function css() {
         return this.emit('end');
     }))
     .pipe(autoprefixer({
-        browsers: ["ie >= 9", "ie_mob >= 10", "ff >= 30", "chrome >= 34", "safari >= 7", "opera >= 23", "ios >= 7", "android >= 4.4", "bb >= 10"],
+        overrideBrowserslist: ["ie >= 9", "ie_mob >= 10", "ff >= 30", "chrome >= 34", "safari >= 7", "opera >= 23", "ios >= 7", "android >= 4.4", "bb >= 10"],
         cascade: false
     }))
     .pipe(gulp.dest("./"))
@@ -56,7 +56,7 @@ return gulp
 function scripts() {
     return (
     gulp
-        .src(['assets/js/library/*.js', 'assets/js/script/*.js'])
+        .src(['assets/js/script/*.js'])
         .pipe(concat('main.js'))
         .pipe(uglify().on('error', function (err) {
             notify({

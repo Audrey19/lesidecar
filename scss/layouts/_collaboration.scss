@@ -1,69 +1,110 @@
 .collabo_flexbox{
+    position: relative;
     width: 100%;
+    height: 600px;
     @include responsive(laptop){
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 8rem;
     }
     .image_gauche{
         width: 100%;
         position: relative;
+        @include responsive(laptop){
+            width: 50%;
+        }
         img{
             width: 100%;
         }
-        @include responsive(laptop){
-        width: 42%;
-            img{
-                width: 100%;
-            }
-        }
+       
         .image_centre{
-            position: absolute;
-            right:0;
-            top: 50px;
-            width: 260px;;
-            img{
-                width: 100%;
-            }
+            display:none;
             @include responsive(laptop){
+            display: block;
             position: absolute;
-            top:50px;
-            right:-5px;
-            } 
+            right:-50px;
+            bottom: 20px;
+            width: 350px;
+                img{
+                    width: 100%;
+                    box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25);
+                }
+            }
         }
+        
     }
     .text_droite{
-        width: 75%;
+        width: 90%;
         margin: auto;
+        background-color: white;
+        box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        top: 130px;
+        right:50%;
+        transform: translate(50%);
+        padding: 40px 10px;
+        box-sizing: border-box;
+       
         @include responsive(laptop){
-        width: 40%;
+        position: relative;
+        top:inherit;
+        transform: inherit;
+        right: inherit;
+        width: 50%;
+        background-color: transparent;
+        box-shadow: none;
+        box-sizing: border-box;
+        margin: 0;
         }
         .text_titles{
-            margin-top: 3rem;
-            width: 100%;
-            text-align: center;
             @include responsive(laptop){
-            margin-top: 0;
-            width: 65%;
-            texte-align:left;
+            width: 70%;
+            margin:auto;
             }
             h1{
                 margin:0;
+                text-align: center;
+                @include responsive(laptop){
+                    text-align: left;
+                }
+            }
+            .textarea{
+                text-align: center;
+                @include responsive(laptop){
+                    text-align: left;
+                }
             }
             .partenaire_flexbox{
-                @include responsive(laptop){
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                .image{
+                    width: 20%;
+                    align-self: center;
+                    img{
+                        padding-top: 10px;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .partenaire{
+                    width: 80%;
+                    padding: 10px;
+                    box-sizing: border-box;
                 }
                 h2{
                     margin-top: 10px;
                     margin-bottom: 0;
+                    color: black;
+                    line-height: 20px;
+                    letter-spacing: 2px;
                 }
                 .name{
                     margin: 0;
                     font-size: 12px;
+                    color: #222222;
+                    opacity: 0.7;
+                    line-height: 28px;
                 }
             }
         }
