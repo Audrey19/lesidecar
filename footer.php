@@ -10,12 +10,13 @@
         </div>
         <div>
           <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
+          <a href="https://www.instagram.com/lesidecar/?hl=fr" class="fa fa-instagram"></a>
           <a href="#" class="fa fa-envelope"></a>
         </div>
       </div>
       <div class="greyitem">
         <p>CONTACT US</p>
+        <p>0472.512212</p>
       </div>
     </div>
   </div>
@@ -38,9 +39,10 @@
     integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="
   crossorigin="anonymous"></script>
 
-  <script src="<?php bloginfo('stylesheet_directory');?>/assets/js/script/script.js"></script>
+  <script src="<?php bloginfo('stylesheet_directory');?>/main.js"></script>
 
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); echo '/main.js?' . filemtime( get_stylesheet_directory() . '/main.js'); ?>"></script>
-	<?php wp_footer(); ?>
+  <?php wp_footer(); ?>
+  </section>
 </body>
 </html>

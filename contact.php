@@ -1,4 +1,4 @@
-<section class="wrapper_approach padding-top--medium padding-bottom--medium">
+<section class="wrapper_approach padding-top--medium padding-bottom--medium" id="contact">
         <div class="approach_titles">
             <h3 class="sectionTitle">- contact</h3>
             <h1 class="firstTitle">Demander un devis</h1>
@@ -8,12 +8,12 @@
                 <div class="texte margin-top--medium">
                     <p>Nous vous recontacterons dans les plus brefs delai et fixerons ensemble une date pour une première consultation (gratuite). Durant cette consultation, nous analyserons vos besoins afin de vous conseiller et d’établir un devis.</p>
                     <div class="partenaire_flexbox margin-top--medium">
-                                    <img class="partenaire" src="<?php bloginfo('template_url'); ?>/assets/images/mail.png" alt="partenaire">
+                                    <img class="partenaire" src="<?php bloginfo('template_url'); ?>/assets/images/phone.png" alt="partenaire">
                                     <h2 class="sectionTitle">TEL 0472 51 22 12</h2>           
                     </div>
                     <div class="partenaire_flexbox margin-top--small margin-bottom--medium">
-                                    <img class="partenaire" src="<?php bloginfo('template_url'); ?>/assets/images/mail.png" alt="partenaire">
-                                    <h2 class="sectionTitle">MAIL @lesidecar.com</h2>           
+                                    <img class="partenaire" src="<?php bloginfo('template_url'); ?>/assets/images/lettre.png" alt="partenaire">
+                                    <h2 class="sectionTitle">@lesidecar.com</h2>           
                     </div>
                 </div>
                

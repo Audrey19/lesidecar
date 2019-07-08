@@ -1,11 +1,11 @@
 
-   <section class="service padding-top--big">
+   <section class="service padding-top--big" id="about">
         <div class="service_titles">
             <h3 class="sectionTitle">- A propos</h3>
               <h1 class="firstTitle">Decouvrez qui nous sommes</h1>
               <p class="paragraphe">Le sidecar, c’est l’histoire d’un couple dont l’envie de creer, d’entprendre et la soif de liberté.. accompagner le client pour mener à bon port, amovible, 2 comme le sidecar...</p>
         </div>
-        <div class="team_mate_flexbox padding-top--medium padding-bottom--small">
+        <div class="team_mate_flexbox margin-bottom--small">
           <div class="mate_picture">
             <img class="mate_img ev" src="<?php bloginfo('template_url'); ?>/assets/images/evrard.png" alt="evrard_picture">
           </div>
@@ -22,9 +22,13 @@
             Et débordant de projets qu’il est, il n’abandonne pas l’idée d’ouvrir un jour sa maison d’hôte dans le sud... Affaire à suivre !</p>
             <h2 class="mate_name">EVRARD DE VISSCHER</h2>
             <h3 class="mate_job_title">Co-founder of Le SIDECAR <br>Application Developer & UX Designer</h3>
+            <a href="https://www.linkedin.com/in/evrard-de-visscher-791000b4/"><img src="<?php bloginfo('template_url'); ?>/assets/images/in.png" alt="logo"></a>
           </div>
         </div>
-        <div class="team_mate_flexbox padding-top--medium padding-bottom--medium">
+        <div class="team_mate_flexbox aude margin-top--medium margin-bottom--medium">
+         <div class="mate_picture ">
+            <img class="mate_img aud" src="<?php bloginfo('template_url'); ?>/assets/images/audrey.jpg" alt="audrey_picture">
+          </div> 
           <div class="mate_description audrey">
             <p class="paragraphe">Audrey est une créative dans l’âme. Après avoir travaillé 2 années en tant que business analyste dans une société de conseil à Bruxelles, elle décide de tout lacher pour suivre sa passion pour le design et la creation.<br><br>
 
@@ -35,9 +39,7 @@
             Elle partage aujourd’hui ses journées entre du design d’interface, du développement web et de la gestion de projet.</p>
             <h2 class="mate_name">AUDREY MERTENS</h2>
             <h3 class="mate_job_title">Co-founder of Le SIDECAR <br>Front-end Developer & Art Director</h3>
-          </div>
-          <div class="mate_picture ">
-            <img class="mate_img aud" src="<?php bloginfo('template_url'); ?>/assets/images/audrey.jpg" alt="audrey_picture">
+            <a href="https://www.linkedin.com/in/audrey-mertens/"><img src="<?php bloginfo('template_url'); ?>/assets/images/in.png" alt="logo"></a>
           </div>
         </div>
 </section>

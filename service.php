@@ -1,6 +1,6 @@
-<section class="wrapper_service">
+<section class="wrapper_service margin-bottom--big" id="services">
     <img class="triangle" src="<?php bloginfo('template_url'); ?>/assets/images/mask_triangle.png" alt="logo">
-    <div class="service padding-top--big">
+    <div class="service">
         <div class="service_titles">
             <h3 class="sectionTitle">- services</h3>
             <h1 class="firstTitle">Consultez notre liste de services</h1>
@@ -14,7 +14,7 @@
                     <h2>prix $$</h2>
                     <h1>Site web avec template</h1>
                     <p>Nous vous accompagnons dans le dessin de son site pour qu’il corresponde exactement à vos besoins et qu’il soit à la mesure de vos ambissions. Nous avons décidé de coder le front-end en HTML, SCSS et JS ainssi qu ele back en PHP et JS. </p>
-                    <a href="" class="btn btn_blue margin-top--small">Demander ce service</a>
+                    <a href="#contact" class="btn btn_blue margin-top--small">Demander ce service</a>
                 </div>
             </div>
             <div class="service_item">
@@ -23,7 +23,7 @@
                     <h2>prix $$</h2>
                     <h1>Site web avec template</h1>
                     <p>Nous vous accompagnons dans le dessin de son site pour qu’il corresponde exactement à vos besoins et qu’il soit à la mesure de vos ambissions. Nous avons décidé de coder le front-end en HTML, SCSS et JS ainssi qu ele back en PHP et JS. </p>
-                    <a href="" class="btn btn_blue margin-top--small">Demander ce service</a>
+                    <a href="#contact"class="btn btn_blue margin-top--small">Demander ce service</a>
                 </div>
             </div>
             <div class="service_item">
@@ -33,7 +33,7 @@
                     <h2>prix $$</h2>
                     <h1>Site web avec template</h1>
                     <p>Nous vous accompagnons dans le dessin de son site pour qu’il corresponde exactement à vos besoins et qu’il soit à la mesure de vos ambissions. Nous avons décidé de coder le front-end en HTML, SCSS et JS ainssi qu ele back en PHP et JS. </p>
-                    <a href="" class="btn btn_blue margin-top--small">Demander ce service</a>
+                    <a href="#contact" class="btn btn_blue margin-top--small">Demander ce service</a>
                 </div>
             </div>
         </div>

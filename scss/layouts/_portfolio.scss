@@ -1,6 +1,9 @@
 .portfolio{
     width: 78%;
     margin: auto;
+    @include responsive(laptop){
+    padding-top: 8rem;
+    }
     .portfolio_titles{
     width: 100%;
         @include responsive(laptop) {

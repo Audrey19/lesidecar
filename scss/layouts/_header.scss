@@ -1,91 +1,99 @@
 
 header{
-    width: 90%;
+    width: 75%;
     margin: 10px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
     .logo_name{
+        display: none;
+        @include responsive(laptop){
+        display: block;
         size: 14px;
         font-family: $ternaryFont;
+        }
     }
     .logo_black{
-        width: 50px;
+        width: 60px;
+        @include responsive(laptop){
         position: absolute;
         right: 50%;
         transform: translate(-50%)
+        }
     }
     .menu-navmenu-container {
-        width:40%;
-        ul#menu_container{
-            display: none;
-            @include responsive(laptop){
+        display:none;
+        @include responsive(laptop){
             display:block;
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-                a{
-                    text-decoration: none;
-                    size: 12px;
-                    font-family: $ternaryFont;
-                    color: black
+            width:40%;
+            ul#menu_container{
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                    a{
+                        text-decoration: none;
+                        size: 12px;
+                        font-family: $ternaryFont;
+                        color: black
+                    }
                 }
             }
+    }
+}
+
+/*navigation menu Responsive*/
+.menu-navmenu-container {
+    ul#menu_container_responsive{
+        display:block;
+        width:70vw;
+        height: 100vh;;
+        position: fixed;
+        top:0;
+        left:100vw;
+        margin: 0;
+        padding-top:80px;
+        background-color: $primaryColor;
+        opacity:0.9;
+        z-index: 3;
+        @include responsive(laptop){
+            display:none;
         }
-
+            ul{
+                padding: 0;
+            }
+            li{ 
+                border-bottom: 1px solid white;
+                margin: 20px auto;
+                padding-bottom: 30px; 
+                display: block;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                line-height: 2rem;
+                font-size: 18px;
+            }
     }
 }
 
-ul#menu_container.is-active{
-    display: block!important;
-    position: fixed;
-    height: 100vh;
-    width:100vw;
-    text-align: center;
-    padding: 20px 15px;
-    top:0px;
-    left: 0px;
-    background-color: black;
-    list-style:none;
-    margin: 0;
-    box-sizing: border-box;
-    ul{
-        padding: 0;
-    }
-    li{
-        border-bottom: 1px solid white;
-        margin: 30px auto;
-        padding-bottom: 30px; 
-        display: block;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-        line-height: 2rem;
-        font-size: 25px;
-        }
-
+ul#menu_container_responsive.is-active{
+    left:30vw;
 }
 
-.menu.is-active{
-    margin-top: 80px;
-}
 
-#responsive_header.is-active{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
+
 
 /*hamburger-menu*/
 .hamburger{
     position: absolute;
-    right: 0;
-    top:0px;
+    right: 10px;
+    top:10px;
     z-index: 990;
+    position: fixed
 }
 .hamburger.is-active{
     z-index: 990;
+    position: fixed;
 }
