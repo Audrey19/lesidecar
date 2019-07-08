@@ -1596,6 +1596,7 @@ ul#menu_container_responsive.is-active {
           margin-top: 4rem; } }
     .acceuil_wrapper .acceuil_box_left .hometitle {
       font-size: 60px; }
+<<<<<<< HEAD
   .acceuil_wrapper .parallax {
     background-image: url("assets/images/profile_picture.png");
     background-size: contain;
@@ -1614,6 +1615,22 @@ ul#menu_container_responsive.is-active {
         display: block;
         position: relative;
         width: 50%; } }
+=======
+
+  .acceuil_wrapper .acceuil_box_right {
+    position: relative;
+
+  .acceuil_wrapper .acceuil_box_middle_item {
+    position: absolute;
+    top: 270px;
+    right: 50%;
+    -webkit-transform: translate(50%);
+    -ms-transform: translate(50%);
+    transform: translate(50%); }
+  .acceuil_wrapper .acceuil_box_right {
+
+    width: 50%; }
+>>>>>>> 14b78b0646c7311a3f7f43d5da3bf9f611bae74f
     .acceuil_wrapper .acceuil_box_right img {
       width: 100%;
       object-fit: cover; }
@@ -1944,6 +1961,7 @@ blockquote {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
+<<<<<<< HEAD
 .team_mate_flexbox {
   background-color: white;
   box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25); }
@@ -2010,6 +2028,51 @@ blockquote {
         .team_mate_flexbox .mate_picture .mate_img {
           max-height: 545px;
           max-width: 470px; } }
+=======
+@media only screen and (min-width: 1025px) {
+  .team_mate_flexbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .team_mate_flexbox .audrey {
+      padding-right: 5%; }
+    .team_mate_flexbox .evrard {
+      padding-left: 5%; } }
+
+.team_mate_flexbox .mate_description {
+  box-sizing: border-box;
+  overflow: hidden; }
+  .team_mate_flexbox .mate_description .paragraphe {
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px; }
+  .team_mate_flexbox .mate_description h2 {
+    font-size: 19.4806px;
+    line-height: 28px;
+    margin-top: 90px; }
+  .team_mate_flexbox .mate_description h3 {
+    font-weight: bold;
+    font-size: 12.3968px;
+    line-height: 25px; }
+
+.team_mate_flexbox .mate_picture {
+  box-sizing: border-box;
+  overflow: hidden; }
+  .team_mate_flexbox .mate_picture .aud {
+    float: right; }
+  .team_mate_flexbox .mate_picture .ev {
+    float: left; }
+  .team_mate_flexbox .mate_picture .mate_img {
+    max-height: 545px;
+    max-width: 470px; }
+>>>>>>> 14b78b0646c7311a3f7f43d5da3bf9f611bae74f
 
 .collabo_flexbox {
   position: relative;
