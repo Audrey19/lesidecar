@@ -14,7 +14,6 @@
   flex-direction: row-reverse;
 }
 .team_mate_flexbox{
-<<<<<<< HEAD
   background-color: white;
   box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25);
   @include responsive(laptop){
@@ -24,24 +23,13 @@
     padding-top: 4rem; 
     display: flex;
     justify-content: space-between;
-=======
-    @include responsive(laptop){
-      display: flex;
-      justify-content: space-between;
-      flex-direction:row;
-
->>>>>>> 14b78b0646c7311a3f7f43d5da3bf9f611bae74f
     .audrey{
           padding-right: 5%;
         }
     .evrard{
           padding-left:5%;
         }
-<<<<<<< HEAD
     }
-=======
-      }
->>>>>>> 14b78b0646c7311a3f7f43d5da3bf9f611bae74f
     .mate_description{
       width: 100%;
       text-align: center;

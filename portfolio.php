@@ -1,8 +1,8 @@
 <section class="portfolio padding-top--small padding-bottom--big" id="portfolio">
     <div class="portfolio_titles">
-        <h3 class="sectionTitle">- portfolio</h3>
-        <h1 class="firstTitle">Découvrez notre travail</h1>
-        <p class="paragraphe">Nous concevons votre site web de A à Z. Du design à la mise en ligne. <br> Nous transformons vos besoins en solution concrète.</p>
+        <h3 class="sectionTitle"><?php the_field('section-title'); ?></h3>
+        <h1 class="firstTitle"><?php the_field('first-title'); ?></h1>
+        <p class="paragraphe"><?php the_field('portfolio_textarea'); ?></p>
     </div>
 
     <div class="portfolio_flexbox margin-top--medium">

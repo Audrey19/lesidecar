@@ -4,15 +4,18 @@
     <div class="acceuil_box_left">
         <div class="box_left_width_item">
 
-            <h1 class="hometitle">Besoin d’un site Web?</h1>
-            <p class="paragraphe">Nous concevons votre site web de A à Z. Du design à la mise en ligne.<br> Nous transformons vos besoins en solution concrète.</p>
+            <h1 class="hometitle"><?php the_field('home-title'); ?></h1>
+            <p class="paragraphe"><?php the_field('home-textarea'); ?></p>
 
             <a class="btn btn_blue margin-top--small margin-bottom--medium" href="#services">our services</a>
         </div>
     </div>
     <div class="parallax"></div>
     <div class="acceuil_box_right">
-        <img class="acceuil_box_right_item" src="<?php bloginfo('template_url'); ?>/assets/images/profile_picture.png" alt="profile">
+    <?php $image = get_field('background-image');
+        if( !empty($image) ): ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"">
+        <?php endif; ?>
         <div class="acceuil_box_middle">
             <img class="acceuil_box_middle_item" src="<?php bloginfo('template_url'); ?>/assets/images/Video2.png" alt="video">
         </div>
