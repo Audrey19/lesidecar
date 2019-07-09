@@ -1691,12 +1691,13 @@ ul#menu_container_responsive.is-active {
             font-family: "Open Sans", sans-serif;
             margin: 20px 0;
             text-transform: uppercase; }
-          .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text h3 {
+          .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text p {
             font-size: 12px;
             font-family: "Open Sans", sans-serif;
             line-height: 17px;
             font-weight: 300;
-            margin: 30px 0; }
+            margin: 30px 0;
+            color: white; }
       .portfolio .portfolio_flexbox .flexbox_item .portfolio_image {
         object-fit: cover;
         width: 100%;
