@@ -13,7 +13,6 @@
             @include responsive(laptop){
             width: 70%;
             }
-            width: 90%;
             .partenaire_flexbox{
                 display: flex;
                 flex-direction: row;
@@ -24,6 +23,7 @@
                     font-size: 12px;
                     margin-top: 1.5rem;
                     margin-left: 2rem;
+                    overflow-wrap: break-word;
                 }
             }
         }

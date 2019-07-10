@@ -2,11 +2,12 @@
   <div class="footergrey">
     <div class="footergrey_container">
       <div class="greyitem">
-        <p>ADDRESS</p>
+        <p><?php the_field('adresse-title'); ?></p>
+        <p><?php the_field('adresse-texte'); ?></p>
       </div>
       <div class="greyitem">
         <div>
-          <p>FOLLOW US</p>
+          <p><?php the_field('follow-title'); ?></p>
         </div>
         <div>
           <a href="#" class="fa fa-facebook"></a>
@@ -15,11 +16,13 @@
         </div>
       </div>
       <div class="greyitem">
-        <p>CONTACT US</p>
-        <p>0472.512212</p>
+        <p><?php the_field('contact-title'); ?></p>
+        <?php the_field('contact-footer-texte'); ?>
+        
       </div>
     </div>
   </div>
+
   <div class="footerblack">
     <div class="footerblack_container">
       <div class="imgfooter">

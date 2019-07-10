@@ -22,7 +22,7 @@
 </head>
 <body>
 <header>
-  <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bleu.png" alt="logo">
+  <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
   <p class="logo_name">LE SIDECAR</p>
   <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?>   
 </header>

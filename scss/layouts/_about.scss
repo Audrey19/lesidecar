@@ -31,7 +31,8 @@
         }
     }
     .mate_description{
-      width: 100%;
+      width: 90%;
+      margin: auto;
       text-align: center;
       @include responsive(laptop){
         text-align: left;
