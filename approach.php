@@ -80,7 +80,7 @@
             <div class="padding-top--small padding-bottom--small">
             <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_black.png" alt="logo">
             <h2 class="firstTitle small"><?php the_field('rdv-texte'); ?></h2>
-            <a href="#contact" class="btn btn_white margin-top--small">Booker un RDV</a>
+            <a href="#contact" class="btn btn_white margin-top--small"><?php the_field('bouton'); ?></a>
             </div>
         </div>
         </div>

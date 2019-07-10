@@ -1404,7 +1404,7 @@ body {
 
 /* Layout */
 header {
-  width: 75%;
+  width: 85%;
   margin: 10px auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1433,13 +1433,13 @@ header {
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
         transform: translate(-50%); } }
-  header .menu-navmenu-container {
+  header .menu_container {
     display: none; }
     @media only screen and (min-width: 1025px) {
-      header .menu-navmenu-container {
+      header .menu_container {
         display: block;
-        width: 40%; }
-        header .menu-navmenu-container ul#menu_container {
+        width: 45%; }
+        header .menu_container ul#menu-navmenu, header .menu_container #menu-navmenu_en, header .menu_container #menu-navmenu_nl {
           list-style-type: none;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -1450,14 +1450,14 @@ header {
           -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
           justify-content: space-between; }
-          header .menu-navmenu-container ul#menu_container a {
+          header .menu_container ul#menu-navmenu a, header .menu_container #menu-navmenu_en a, header .menu_container #menu-navmenu_nl a {
             text-decoration: none;
             size: 12px;
             font-family: "Open Sans", sans-serif;
             color: black; } }
 
 /*navigation menu Responsive*/
-.menu-navmenu-container ul#menu_container_responsive {
+.menu_container_responsive ul#menu-navmenu-1, .menu_container_responsive #menu-navmenu_en-1, .menu_container_responsive #menu-navmenu_nl-1 {
   display: block;
   width: 70vw;
   height: 100vh;
@@ -1470,22 +1470,22 @@ header {
   opacity: 0.9;
   z-index: 3; }
   @media only screen and (min-width: 1025px) {
-    .menu-navmenu-container ul#menu_container_responsive {
+    .menu_container_responsive ul#menu-navmenu-1, .menu_container_responsive #menu-navmenu_en-1, .menu_container_responsive #menu-navmenu_nl-1 {
       display: none; } }
-  .menu-navmenu-container ul#menu_container_responsive ul {
+  .menu_container_responsive ul#menu-navmenu-1 ul, .menu_container_responsive #menu-navmenu_en-1 ul, .menu_container_responsive #menu-navmenu_nl-1 ul {
     padding: 0; }
-  .menu-navmenu-container ul#menu_container_responsive li {
+  .menu_container_responsive ul#menu-navmenu-1 li, .menu_container_responsive #menu-navmenu_en-1 li, .menu_container_responsive #menu-navmenu_nl-1 li {
     border-bottom: 1px solid white;
     margin: 20px auto;
     padding-bottom: 30px;
     display: block; }
-  .menu-navmenu-container ul#menu_container_responsive a {
+  .menu_container_responsive ul#menu-navmenu-1 a, .menu_container_responsive #menu-navmenu_en-1 a, .menu_container_responsive #menu-navmenu_nl-1 a {
     text-decoration: none;
     color: white;
     line-height: 2rem;
     font-size: 18px; }
 
-ul#menu_container_responsive.is-active {
+ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is-active {
   left: 30vw; }
 
 /*hamburger-menu*/

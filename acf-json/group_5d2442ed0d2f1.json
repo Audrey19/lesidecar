@@ -97,6 +97,25 @@
             "height": ""
         },
         {
+            "key": "field_5d25e4852495e",
+            "label": "bouton-home",
+            "name": "bouton-home",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5d2443e9beb9e",
             "label": "portfolio",
             "name": "",
@@ -284,6 +303,25 @@
                     },
                     "default_value": "",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_5d25e4fb24960",
+                    "label": "bouton-text",
+                    "name": "bouton-text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -459,6 +497,25 @@
                     "toolbar": "full",
                     "media_upload": 1,
                     "delay": 0
+                },
+                {
+                    "key": "field_5d25e5155b2bb",
+                    "label": "bouton-texte",
+                    "name": "bouton-texte",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -641,6 +698,25 @@
             "key": "field_5d25a550d73c0",
             "label": "rdv-texte",
             "name": "rdv-texte",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d25e4922495f",
+            "label": "bouton-methode",
+            "name": "bouton",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1360,6 +1436,20 @@
                 "operator": "==",
                 "value": "6"
             }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "278"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "276"
+            }
         ]
     ],
     "menu_order": 0,
@@ -1370,5 +1460,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1562759350
+    "modified": 1562764581
 }

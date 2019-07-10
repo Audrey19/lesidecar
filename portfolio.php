@@ -19,7 +19,7 @@
                     <?php the_sub_field('project-textarea'); ?>
                     <?php $link = get_sub_field('project-link');
                         if( $link ): ?>
-                        <a class="btn btn_white" href="<?php echo $link; ?>" target="_blank">Voir le site</a>
+                        <a class="btn btn_white" href="<?php echo $link; ?>" target="_blank"><?php the_sub_field('bouton-text'); ?></a>
                     <?php endif; ?>
                 </div>
             </div>

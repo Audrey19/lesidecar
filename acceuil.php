@@ -7,7 +7,7 @@
             <h1 class="hometitle"><?php the_field('home-title'); ?></h1>
             <p class="paragraphe"><?php the_field('home-textarea'); ?></p>
 
-            <a class="btn btn_blue margin-top--small margin-bottom--medium" href="#services">our services</a>
+            <a class="btn btn_blue margin-top--small margin-bottom--medium" href="#services"><?php the_field('bouton-home'); ?></a>
         </div>
     </div>
     <div class="parallax"></div>

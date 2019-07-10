@@ -1,6 +1,6 @@
 
 header{
-    width: 75%;
+    width: 85%;
     margin: 10px auto;
     display: flex;
     flex-direction: row;
@@ -23,12 +23,12 @@ header{
         transform: translate(-50%)
         }
     }
-    .menu-navmenu-container {
+    .menu_container{
         display:none;
         @include responsive(laptop){
             display:block;
-            width:40%;
-            ul#menu_container{
+            width:45%;
+            ul#menu-navmenu, #menu-navmenu_en, #menu-navmenu_nl{
                 list-style-type: none;
                 display: flex;
                 flex-direction: row;
@@ -45,8 +45,8 @@ header{
 }
 
 /*navigation menu Responsive*/
-.menu-navmenu-container {
-    ul#menu_container_responsive{
+.menu_container_responsive {
+    ul#menu-navmenu-1, #menu-navmenu_en-1, #menu-navmenu_nl-1{
         display:block;
         width:70vw;
         height: 100vh;;
@@ -79,7 +79,7 @@ header{
     }
 }
 
-ul#menu_container_responsive.is-active{
+ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is-active{
     left:30vw;
 }
 

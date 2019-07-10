@@ -24,10 +24,10 @@
 <header>
   <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
   <p class="logo_name">LE SIDECAR</p>
-  <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?>   
+  <?php wp_nav_menu(array('container_class' => 'menu_container','theme_location' => 'primary' )); ?>   
 </header>
 
-<?php wp_nav_menu(array('menu_id' => 'menu_container_responsive','theme_location' => 'primary' )); ?>
+<?php wp_nav_menu(array('container_class' => 'menu_container_responsive','theme_location' => 'primary' )); ?>
 
 <button class="hamburger hamburger--slider" type="button">
         <span class="hamburger-box">
