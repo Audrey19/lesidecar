@@ -3,11 +3,13 @@
 }
 
 .footergrey_container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
+  @include responsive(laptop){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .footerblack{
@@ -22,15 +24,24 @@
   padding: 44px 0px;
 }
 .greyitem{
+  text-align: center;
+  padding: 20px 0px;
+  p{
+    margin: 0;
+  }
+  @include responsive(laptop){
   min-width:26%;
   text-align: center;
   padding: 20px 0px 50px 0px;
+  }
 
   p{
     color: white;
     font-size: 12px;
     letter-spacing: 1.5px;
+    @include responsive(laptop){
     margin-bottom: 20px;
+    }
   }
 }
 

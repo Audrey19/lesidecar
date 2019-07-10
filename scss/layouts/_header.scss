@@ -15,8 +15,9 @@ header{
         }
     }
     .logo_black{
-        width: 60px;
+        width: 40px;
         @include responsive(laptop){
+        width: 35px;
         position: absolute;
         right: 50%;
         transform: translate(-50%)

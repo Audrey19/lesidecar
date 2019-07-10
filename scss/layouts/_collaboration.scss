@@ -68,7 +68,7 @@
                     text-align: left;
                 }
             }
-            .textarea{
+            p{
                 text-align: center;
                 @include responsive(laptop){
                     text-align: left;
@@ -99,13 +99,19 @@
                     line-height: 20px;
                     letter-spacing: 2px;
                 }
-                .name{
-                    margin: 0;
-                    font-size: 12px;
-                    color: #222222;
-                    opacity: 0.7;
-                    line-height: 28px;
+                a{
+                    text-decoration: none;
+                    p{
+                        margin: 0;
+                        font-size: 12px;
+                        color: #222222;
+                        opacity: 0.5;
+                        line-height: 28px;
+                        font-weight: bold;
+                        text-align: left;
+                    }
                 }
+            
             }
         }
      

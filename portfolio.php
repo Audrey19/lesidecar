@@ -6,83 +6,26 @@
     </div>
 
     <div class="portfolio_flexbox margin-top--medium">
+    <?php  while ( have_rows('repeteur') ) : the_row(); ?>
         <div class="flexbox_item">
-            <img class="portfolio_image" src="<?php bloginfo('template_url'); ?>/assets/images/project1.png" alt="logo">
+            <?php $back = get_sub_field('background-image');
+            if( !empty($back) ): ?>
+                <img class="portfolio_image" src="<?php echo $back['url']; ?>" alt="<?php echo $back['alt']; ?>"">
+            <?php endif; ?>
             <div class="hover_box fade-in">
                 <div class="hover_text">
-                    <h1>Take A Mini Break</h1>
-                    <h2>SITE web sure mesure</h2>
-                    <h3>It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</h3>
-                    <a class="btn btn_white" href="http://feedyourbrain.eu/" target="_blank">Voir le site</a>
+                    <h1><?php the_sub_field('project-title'); ?></h1>
+                    <h2><?php the_sub_field('project-subtitle'); ?></h2>
+                    <?php the_sub_field('project-textarea'); ?>
+                    <?php $link = get_sub_field('project-link');
+                        if( $link ): ?>
+                        <a class="btn btn_white" href="<?php echo $link; ?>" target="_blank">Voir le site</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
-        <div class="flexbox_item">
-            <img class="portfolio_image" src="<?php bloginfo('template_url'); ?>/assets/images/project1.png" alt="logo">
-            <div class="hover_box fade-in">
-                <div class="hover_text">
-                    <h1>Take A Mini Break</h1>
-                    <h2>SITE web sure mesure</h2>
-                    <h3>It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</h3>
-                    <a class="btn btn_white" href="">Voir le site</a>
-                </div>
-            </div>
-        </div>
-        <div class="flexbox_item">
-            <img class="portfolio_image" src="<?php bloginfo('template_url'); ?>/assets/images/project1.png" alt="logo">
-            <div class="hover_box fade-in">
-                <div class="hover_text">
-                    <h1>Take A Mini Break</h1>
-                    <h2>SITE web sure mesure</h2>
-                    <h3>It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</h3>
-                    <a class="btn btn_white" href="">Voir le site</a>
-                </div>
-            </div>
-        </div>
-        <div class="flexbox_item">
-            <img class="portfolio_image" src="<?php bloginfo('template_url'); ?>/assets/images/project1.png" alt="logo">
-            <div class="hover_box fade-in">
-                <div class="hover_text">
-                    <h1>Take A Mini Break</h1>
-                    <h2>SITE web sure mesure</h2>
-                    <h3>It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</h3>
-                    <a class="btn btn_white" href="">Voir le site</a>
-                </div>
-            </div>
-        </div>
-        <div class="flexbox_item">
-            <img class="portfolio_image" src="<?php bloginfo('template_url'); ?>/assets/images/project1.png" alt="logo">
-            <div class="hover_box fade-in">
-                <div class="hover_text">
-                    <h1>Take A Mini Break</h1>
-                    <h2>SITE web sure mesure</h2>
-                    <h3>It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</h3>
-                    <a class="btn btn_white" href="">Voir le site</a>
-                </div>
-            </div>
-        </div>
-        <div class="flexbox_item">
-            <img class="portfolio_image" src="<?php bloginfo('template_url'); ?>/assets/images/project1.png" alt="logo">
-            <div class="hover_box fade-in">
-                <div class="hover_text">
-                    <h1>Take A Mini Break</h1>
-                    <h2>SITE web sure mesure</h2>
-                    <h3>It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</h3>
-                    <a class="btn btn_white" href="">Voir le site</a>
-                </div>
-            </div>
-        </div>
-        <div class="flexbox_item">
-            <img class="portfolio_image" src="<?php bloginfo('template_url'); ?>/assets/images/project1.png" alt="logo">
-            <div class="hover_box fade-in">
-                <div class="hover_text">
-                    <h1>Take A Mini Break</h1>
-                    <h2>SITE web sure mesure</h2>
-                    <h3>It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</h3>
-                    <a class="btn btn_white" href="">Voir le site</a>
-                </div>
-            </div>
-        </div>
-        <div class="flexbox_item"></div>  
+    <?php endwhile;?>
+    <div class="flexbox_item"></div>  
+    <div class="flexbox_item"></div>  
     </div>
 </section>

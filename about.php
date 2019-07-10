@@ -1,44 +1,36 @@
 
    <section class="service padding-top--big" id="about">
         <div class="service_titles">
-            <h3 class="sectionTitle">- A propos</h3>
-              <h1 class="firstTitle">Decouvrez qui nous sommes</h1>
-              <p class="paragraphe">Le sidecar, c’est l’histoire d’un couple dont l’envie de creer, d’entprendre et la soif de liberté.. accompagner le client pour mener à bon port, amovible, 2 comme le sidecar...</p>
+            <h3 class="sectionTitle"><?php the_field('about-section'); ?></h3>
+              <h1 class="firstTitle"><?php the_field('about-titre'); ?></h1>
+              <?php the_field('about-texte'); ?>
         </div>
         <div class="team_mate_flexbox margin-bottom--small">
           <div class="mate_picture">
-            <img class="mate_img ev" src="<?php bloginfo('template_url'); ?>/assets/images/evrard.png" alt="evrard_picture">
+            <?php $evrard = get_field('evrard-img');
+              if( !empty($evrard) ): ?>
+                <img class="mate_img ev" src="<?php echo $evrard['url']; ?>" alt="<?php echo $evrard['alt']; ?>"">
+            <?php endif; ?>
           </div>
 
           <div class="mate_description evrard">
-            <p class="paragraphe">Evrard passe ses premières années dans la consultance et la Supply Chain où il est melé à divers projets IT. Il sent que pour arriver à ses fins il lui me manque une formation technique dans ce domaine. C’est ainsi qu’Evrard décide de quitter son poste pour suivre une formation de développement full stack au Wagon.<br><br>
-
-
-            A la sortie de cette école, Evrard s’engage chez Atos en tant que développeur front-end et consultant UX.<br><br>
-
-
-
-            Il décide d’exporter son expérience de consultant alliant entrepreneuriat, vision produit et plaisir du code pour créer Le Sidecar avec l’aide de son opposé feminin!...
-            Et débordant de projets qu’il est, il n’abandonne pas l’idée d’ouvrir un jour sa maison d’hôte dans le sud... Affaire à suivre !</p>
-            <h2 class="mate_name">EVRARD DE VISSCHER</h2>
-            <h3 class="mate_job_title">Co-founder of Le SIDECAR <br>Application Developer & UX Designer</h3>
+          <?php the_field('evrard-texte'); ?>
+            <h2 class="mate_name"><?php the_field('evrard-name'); ?></h2>
+            <h3 class="mate_job_title"><?php the_field('evrard-statut'); ?></h3>
             <a href="https://www.linkedin.com/in/evrard-de-visscher-791000b4/"><img src="<?php bloginfo('template_url'); ?>/assets/images/in.png" alt="logo"></a>
           </div>
         </div>
         <div class="team_mate_flexbox aude margin-top--medium margin-bottom--medium">
          <div class="mate_picture ">
-            <img class="mate_img aud" src="<?php bloginfo('template_url'); ?>/assets/images/audrey.jpg" alt="audrey_picture">
+          <?php $audrey = get_field('audrey-img');
+              if( !empty($audrey) ): ?>
+                <img class="mate_img aud" src="<?php echo $audrey['url']; ?>" alt="<?php echo $audrey['alt']; ?>"">
+            <?php endif; ?>
           </div> 
           <div class="mate_description audrey">
-            <p class="paragraphe">Audrey est une créative dans l’âme. Après avoir travaillé 2 années en tant que business analyste dans une société de conseil à Bruxelles, elle décide de tout lacher pour suivre sa passion pour le design et la creation.<br><br>
-
-
-            Elle entame alors une formation de développement Front-End, à la Wild Code School, où elle apprend à coder et pofinne, par la suite, ses bases lors d’un stage chez World of Digits.<br><br>
-
-
-            Elle partage aujourd’hui ses journées entre du design d’interface, du développement web et de la gestion de projet.</p>
-            <h2 class="mate_name">AUDREY MERTENS</h2>
-            <h3 class="mate_job_title">Co-founder of Le SIDECAR <br>Front-end Developer & Art Director</h3>
+          <?php the_field('audrey-texte'); ?>
+            <h2 class="mate_name"><?php the_field('audrey-name'); ?></h2>
+            <h3 class="mate_job_title"><?php the_field('audrey-status'); ?></h3>
             <a href="https://www.linkedin.com/in/audrey-mertens/"><img src="<?php bloginfo('template_url'); ?>/assets/images/in.png" alt="logo"></a>
           </div>
         </div>

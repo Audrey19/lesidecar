@@ -1,5 +1,5 @@
 <section class="wrapper_approach">
-            <h3 class="sectionTitle">- collaboration</h3>
+            <h3 class="sectionTitle"><?php the_field('partenaire-section'); ?></h3>
 </section>
 
 <section class="collabo_flexbox margin-top--medium">
@@ -12,30 +12,24 @@
 
             <div class="text_droite">
                 <div class="text_titles">
-                    <h1 class="firstTitle">Nos partenaires</h1>
-                    <p class="textarea">Nous proposons des services connexes au code pour que vous puissiez aller plus loin dans votre experience client.</p>
+                    <h1 class="firstTitle"><?php the_field('partenaire-titre'); ?></h1>
+                    <?php the_field('partenaire-texte'); ?>
                     <div class="partenaire_flexbox margin-top--medium">
+                    <?php  while ( have_rows('partenaire-repeteur') ) : the_row(); ?>
                             <div class="image">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/images/emile.png" alt="partenaire">
                             </div>
                             <div class="partenaire">
-                                <h2 class="sectionTitle">SEO & creation contenu</h2>
-                                <p class="name">Emilie Pirmez (lien vers le site)</p>
+                                <h2 class="sectionTitle"><?php the_sub_field('partenaire-title'); ?></h2>
+                                <?php $web = get_sub_field('partenaire-website');
+                                if( $web ): ?>
+                                    <a href=<?php echo $web; ?> target="_blank">
+                                        <?php the_sub_field('partenaire-name'); ?>
+                                    </a>
+                                <?php endif; ?>
                             </div>
-                            <div class="image">
-                                <img  src="<?php bloginfo('template_url'); ?>/assets/images/emile.png" alt="partenaire">
-                            </div>
-                            <div class="partenaire">
-                                <h2 class="sectionTitle">Graphisme</h2>
-                                <p class="name">Emilie Pirmez (lien vers le site)</p>
-                            </div>
-                            <div class="image">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/images/emile.png" alt="partenaire">
-                            </div>
-                            <div class="partenaire">
-                                <h2 class="sectionTitle">Photo & Video</h2>
-                                <p class="name">Emilie Pirmez (lien vers le site)</p>
-                            </div>
+                    <?php endwhile;?>
+
                     </div>
                 </div>
             </div>

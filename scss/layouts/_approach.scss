@@ -2,10 +2,18 @@
     width: 78%;
     margin: auto;
     .approach_titles{
+		p{
+			font-size: 15px;
+			font-family: "Open Sans", sans-serif;
+			line-height: 1.5rem;
+			color: #222222;
+			font-weight: 300;
+		}
 		@include responsive(laptop){
 		width:760px;
 		}
-    }
+	}
+	
 }
 
 .timeline {
@@ -41,6 +49,10 @@
 				right: auto;
 				left: 0;
 			}
+			p{
+				font-size: 12px;
+				line-height: 17px;
+			  }
 
 			&::after {
 				content: '';
@@ -70,6 +82,10 @@
 	border-radius: 4px;
 	background: #f5f5f5;
 	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+	p{
+		font-size: 12px;
+		line-height: 17px;
+	  }
 
 	&::after {
 		content: '';
@@ -133,7 +149,9 @@
 
 .timeline-item {
   .timeline-img-header {
-	 		overflow: hidden;
+			 overflow: hidden;
+			 outline: 100px solid rgba(117, 81, 236, 0.5);
+   			outline-offset: -100px;
 			.landscape{
 				width: 100%;
 			}
