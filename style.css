@@ -1425,18 +1425,35 @@ header {
         font-weight: bold;
         font-family: "Fira Sans", sans-serif; } }
   header .logo_black {
-    width: 30px;
-    height: auto;
-    padding-top: 10px; }
+    min-width: 30px;
+    height: 32.14px;
+    padding-top: 10px;
+    display: block; }
     @media only screen and (min-width: 1025px) {
       header .logo_black {
         width: 35px;
+        height: auto;
         position: absolute;
         right: 50%;
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
         transform: translate(-50%);
         padding-top: 0; } }
+  header .langue {
+    display: none; }
+    @media only screen and (min-width: 1025px) {
+      header .langue {
+        display: block;
+        position: absolute;
+        right: 0;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        header .langue li {
+          list-style-type: none; } }
   header .menu_container {
     display: none; }
     @media only screen and (min-width: 1025px) {
@@ -1453,7 +1470,8 @@ header {
           flex-direction: row;
           -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+          padding-right: 120px; }
           header .menu_container ul#menu-navmenu a, header .menu_container #menu-navmenu_en a, header .menu_container #menu-navmenu_nl a {
             text-decoration: none;
             size: 12px;
@@ -1461,6 +1479,9 @@ header {
             color: black; } }
 
 /*navigation menu Responsive*/
+.langue_responsive {
+  display: none; }
+
 .menu_container_responsive ul#menu-navmenu-1, .menu_container_responsive #menu-navmenu_en-1, .menu_container_responsive #menu-navmenu_nl-1 {
   display: block;
   width: 70vw;
@@ -1488,6 +1509,22 @@ header {
     color: white;
     line-height: 2rem;
     font-size: 18px; }
+
+.langue_responsive.is-active {
+  position: fixed;
+  display: block;
+  z-index: 10;
+  left: 30vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  bottom: 110px;
+  right: 0; }
+  .langue_responsive.is-active li {
+    list-style-type: none; }
 
 ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is-active {
   left: 30vw; }

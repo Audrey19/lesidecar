@@ -16,16 +16,30 @@ header{
         }
     }
     .logo_black{
-        width: 30px;
-        height:auto;
+        min-width: 30px;
+        height:32.14px;
         padding-top: 10px;
         display: block;
         @include responsive(laptop){
         width: 35px;
+        height: auto;
         position: absolute;
         right: 50%;
         transform: translate(-50%);
         padding-top: 0;
+        }
+    }
+    .langue{
+        display: none;
+        @include responsive(laptop){
+            display:block;
+            position: absolute;
+            right: 0;
+            display:flex;
+            flex-direction: row;
+            li{
+                list-style-type: none;
+            }
         }
     }
     .menu_container{
@@ -38,6 +52,7 @@ header{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                padding-right: 120px;
                     a{
                         text-decoration: none;
                         size: 12px;
@@ -50,6 +65,9 @@ header{
 }
 
 /*navigation menu Responsive*/
+.langue_responsive{
+    display:none;  
+}
 .menu_container_responsive {
     ul#menu-navmenu-1, #menu-navmenu_en-1, #menu-navmenu_nl-1{
         display:block;
@@ -84,6 +102,19 @@ header{
     }
 }
 
+.langue_responsive.is-active{
+    position: fixed;
+    display: block;
+    z-index:10;
+    left: 30vw;
+    display:flex;
+    flex-direction: row;
+    bottom: 110px;
+    right:0;
+        li{
+            list-style-type: none;
+        }
+}
 ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is-active{
     left:30vw;
 }

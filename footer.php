@@ -10,9 +10,9 @@
           <p><?php the_field('follow-title'); ?></p>
         </div>
         <div>
-          <a href="#" class="fa fa-facebook"></a>
+         <!-- <a href="#" class="fa fa-facebook"></a>-->
           <a href="https://www.instagram.com/lesidecar/?hl=fr" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-envelope"></a>
+         <!-- <a href="#" class="fa fa-envelope"></a>-->
         </div>
       </div>
       <div class="greyitem">
