@@ -11,11 +11,12 @@ header{
         @include responsive(laptop){
         display: block;
         size: 14px;
-        font-family: $ternaryFont;
+        font-weight: bold;
+        font-family: $primaryFont;
         }
     }
     .logo_black{
-        width: 40px;
+        width: 20%;
         @include responsive(laptop){
         width: 35px;
         position: absolute;

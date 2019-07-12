@@ -20,10 +20,13 @@
                     @include responsive(laptop){
                         font-size: 14px;
                     }
+                    letter-spacing: 2px;
                     font-size: 12px;
                     margin-top: 1.5rem;
                     margin-left: 2rem;
                     overflow-wrap: break-word;
+                    color:grey;
+                    text-decoration: none;
                 }
             }
         }

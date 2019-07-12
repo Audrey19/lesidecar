@@ -18,15 +18,12 @@
   "homepage": "https://github.com/jeromedessy",
   "devDependencies": {
     "browser-sync": "*",
-    "gulp": "^4.0.2",
+    "gulp": "^4",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
-    "gulp-eslint": "*",
     "gulp-notify": "*",
     "gulp-sass": "*",
+    "gulp-eslint": "*",
     "gulp-uglify": "*"
-  },
-  "dependencies": {
-    "scrollreveal": "^4.0.5"
   }
 }

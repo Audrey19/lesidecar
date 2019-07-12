@@ -1422,9 +1422,10 @@ header {
       header .logo_name {
         display: block;
         size: 14px;
-        font-family: "Open Sans", sans-serif; } }
+        font-weight: bold;
+        font-family: "Fira Sans", sans-serif; } }
   header .logo_black {
-    width: 40px; }
+    width: 20%; }
     @media only screen and (min-width: 1025px) {
       header .logo_black {
         width: 35px;
@@ -1535,7 +1536,8 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
   text-align: center;
   padding: 20px 0px; }
   .greyitem p {
-    margin: 0; }
+    margin: 0;
+    color: white; }
   @media only screen and (min-width: 1025px) {
     .greyitem {
       min-width: 26%;
@@ -1543,6 +1545,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
       padding: 20px 0px 50px 0px; } }
   .greyitem p {
     color: white;
+    text-decoration: none;
     font-size: 12px;
     letter-spacing: 1.5px; }
     @media only screen and (min-width: 1025px) {
@@ -1610,7 +1613,6 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
     background-image: url("assets/images/profile_picture.png");
     background-size: contain;
     height: 400px;
-    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat; }
     @media only screen and (min-width: 1025px) {
@@ -1638,7 +1640,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
   margin: auto; }
   @media only screen and (min-width: 1025px) {
     .portfolio {
-      padding-top: 8rem; } }
+      padding-top: 15rem; } }
   .portfolio .portfolio_titles {
     width: 100%; }
     @media only screen and (min-width: 1025px) {
@@ -1957,12 +1959,19 @@ blockquote {
     border-color: transparent #f5f5f5 transparent transparent; } }
 
 .service {
-  width: 78%;
-  margin: auto;
+  width: 100%;
   z-index: 3; }
   @media only screen and (min-width: 1025px) {
-    .service .service_titles {
-      width: 760px; } }
+    .service {
+      width: 78%;
+      margin: auto; } }
+  .service .service_titles {
+    width: 78%;
+    margin: auto; }
+    @media only screen and (min-width: 1025px) {
+      .service .service_titles {
+        width: 760px;
+        margin: 0; } }
 
 .aude {
   -webkit-flex-direction: row-reverse;
@@ -1970,10 +1979,13 @@ blockquote {
   flex-direction: row-reverse; }
 
 .team_mate_flexbox {
+  width: 90%;
+  margin: auto;
   background-color: white;
   box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25); }
   @media only screen and (min-width: 1025px) {
     .team_mate_flexbox {
+      width: 100%;
       padding-top: 2rem;
       background-color: transparent;
       box-shadow: none;
@@ -2016,6 +2028,7 @@ blockquote {
       line-height: 25px;
       margin-bottom: 0px; }
   .team_mate_flexbox .mate_picture {
+    margin-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
     overflow: hidden;
@@ -2023,6 +2036,7 @@ blockquote {
     @media only screen and (min-width: 1025px) {
       .team_mate_flexbox .mate_picture {
         box-sizing: border-box;
+        margin-top: 0;
         overflow: hidden; }
         .team_mate_flexbox .mate_picture .aud {
           float: right; }
@@ -2179,10 +2193,13 @@ blockquote {
     -ms-flex-direction: row;
     flex-direction: row; }
     .contact_flexbox .box_right .texte .partenaire_flexbox h2 {
+      letter-spacing: 2px;
       font-size: 12px;
       margin-top: 1.5rem;
       margin-left: 2rem;
-      overflow-wrap: break-word; }
+      overflow-wrap: break-word;
+      color: grey;
+      text-decoration: none; }
       @media only screen and (min-width: 1025px) {
         .contact_flexbox .box_right .texte .partenaire_flexbox h2 {
           font-size: 14px; } }
