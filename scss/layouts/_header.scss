@@ -19,6 +19,7 @@ header{
         width: 30px;
         height:auto;
         padding-top: 10px;
+        display: block;
         @include responsive(laptop){
         width: 35px;
         position: absolute;
