@@ -10,7 +10,7 @@
             <a class="btn btn_blue margin-top--small margin-bottom--medium" href="#services"><?php the_field('bouton-home'); ?></a>
         </div>
     </div>
-    <div class="parallax"></div>
+    <div class="parallax margin-bottom--medium"></div>
     <div class="acceuil_box_right">
     <?php $image = get_field('background-image');
         if( !empty($image) ): ?>

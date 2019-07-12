@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title><?php bloginfo('title'); ?></title>
 
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,7 +23,7 @@
 </head>
 <body>
 <header>
-  <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="logo">
+  <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
   <p class="logo_name">LE SIDECAR</p>
   <?php wp_nav_menu(array('container_class' => 'menu_container','theme_location' => 'primary' )); ?>   
 </header>
