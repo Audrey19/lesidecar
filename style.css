@@ -1521,7 +1521,7 @@ header {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  bottom: 110px;
+  bottom: 50px;
   right: 0; }
   .langue_responsive.is-active li {
     list-style-type: none; }
