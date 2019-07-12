@@ -104,15 +104,21 @@ header{
 
 .langue_responsive.is-active{
     position: fixed;
+    width: 130px;
     display: block;
     z-index:10;
     left: 30vw;
     display:flex;
     flex-direction: row;
-    bottom: 50px;
+    justify-content: space-between;
+    bottom: 20px;
     right:0;
         li{
             list-style-type: none;
+            img{
+                width: 25px;
+                height: auto;
+            }
         }
 }
 ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is-active{
