@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     @include responsive(laptop){
-       height: 80vh;
+       height: 100vh;
         }
     .acceuil_box_left{
         width:100%;
@@ -69,7 +69,7 @@
                 position: absolute;
                 bottom:0px;
                 left:45%;
-                bottom: 5%;
+                bottom: -10%;
                     .acceuil_box_middle_item{
                         width: 100%;
                         object-fit: cover;
