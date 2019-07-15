@@ -20,6 +20,31 @@
     }*/
 }
 
+.btn_circle{
+    padding: 1rem 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color:$primaryColor;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+        background-color: $secondaryColor;
+        color:white;
+       /* &::after{
+           left:20px;
+       }*/
+       }
+       @include responsive(laptop){
+        display: none;
+        }
+
+}
 .btn_blue{
     color:white;
     background-color: $primaryColor;

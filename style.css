@@ -343,6 +343,29 @@ body {
         left:0;
     }*/ }
 
+.btn_circle {
+  padding: 1rem 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #4737FF;
+  font-weight: bold;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none; }
+  .btn_circle:hover {
+    background-color: #FA6950;
+    color: white;
+    /* &::after{
+           left:20px;
+       }*/ }
+  @media only screen and (min-width: 1025px) {
+    .btn_circle {
+      display: none; } }
+
 .btn_blue {
   color: white;
   background-color: #4737FF; }
@@ -1725,6 +1748,14 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
       @media only screen and (min-width: 1025px) {
         .portfolio .portfolio_flexbox .flexbox_item {
           width: calc(25% - 10px); } }
+      .portfolio .portfolio_flexbox .flexbox_item .absolute {
+        position: absolute;
+        z-index: 1;
+        bottom: 20px;
+        right: 20px; }
+        @media only screen and (min-width: 1025px) {
+          .portfolio .portfolio_flexbox .flexbox_item .absolute {
+            display: none; } }
       .portfolio .portfolio_flexbox .flexbox_item .hover_box {
         display: block;
         position: absolute;
@@ -2101,7 +2132,6 @@ blockquote {
       max-width: 100%; }
       @media only screen and (min-width: 1025px) {
         .team_mate_flexbox .mate_picture .mate_img {
-          max-height: 545px;
           max-width: 470px; } }
 
 .collabo_flexbox {

@@ -93,7 +93,6 @@
       .mate_img{
         max-width: 100%;
         @include responsive(laptop){
-        max-height: 545px;
         max-width: 470px;
         }
         }
