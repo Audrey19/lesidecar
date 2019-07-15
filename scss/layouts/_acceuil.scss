@@ -9,7 +9,7 @@
     justify-content: space-between;
     }
     .acceuil_box_left{
-        width: 75%;
+        width: 90%;
         margin: auto;
         text-align: center;
         z-index: 3;
@@ -20,7 +20,6 @@
             .box_left_width_item{
                 width: 70%;
                 @include responsive(laptop){
-                    margin-top: 8rem;
                 a{
                     margin-top: 4rem;
                 }
@@ -47,7 +46,7 @@
         @include responsive(laptop){
         display:block;
         position: relative;
-        width:50%;
+        width:60%;
         }
             img{
             width: 100%;
@@ -56,8 +55,13 @@
         .acceuil_box_middle{
             @include responsive(laptop){
             position: absolute;
-            bottom:-100px;
+            box-shadow: 30px 80px 180px rgba(0, 0, 0, 0.25);
+            bottom:0px;
             left:-200px;
+            .acceuil_box_middle_item{
+                width: 100%;
+                object-fit: cover;
+            }
             }
         }
       }
