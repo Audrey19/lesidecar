@@ -17,7 +17,9 @@
                 <?php endif; ?>
                     <h2><?php the_sub_field('box-section'); ?></h2>
                     <h1><?php the_sub_field('box-title'); ?></h1>
-                    <?php the_sub_field('box-text'); ?>
+                    <div class="height">
+                        <?php the_sub_field('box-text'); ?>
+                    </div>
                     <a href="#contact" class="btn btn_blue margin-top--small"><?php the_sub_field('bouton-texte'); ?></a>
                 </div>
             </div>

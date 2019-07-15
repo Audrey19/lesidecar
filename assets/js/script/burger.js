@@ -1,5 +1,5 @@
 $(".hamburger").click(function(){
-    $(".hamburger").addClass("is-active");
-    $(".langue_responsive").addClass("is-active");
-    $(".menu_container_responsive ul").addClass("is-active");
+    $(this).toggleClass("is-active");
+    $(".langue_responsive").toggleClass("is-active");
+    $(".menu_container_responsive ul").toggleClass("is-active");
 });

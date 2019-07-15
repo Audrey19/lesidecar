@@ -17,7 +17,10 @@
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"">
         <?php endif; ?>
         <div class="acceuil_box_middle">
-            <img class="acceuil_box_middle_item" src="<?php bloginfo('template_url'); ?>/assets/images/Video2.png" alt="video">
+            <?php $images = get_field('red-image');
+            if( !empty($images) ): ?>
+                <img class="acceuil_box_middle_item" src="<?php echo $images['url']; ?>" alt="<?php echo $images['alt']; ?>"">
+            <?php endif; ?>
         </div>
     </div>
 </section>

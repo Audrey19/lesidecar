@@ -1826,12 +1826,14 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
             margin: 20px 0;
             text-transform: uppercase;
             color: #4737FF; }
-          .wrapper_service .service .service_flexbox .service_item .service_item_content p {
-            font-size: 14px;
-            font-family: "Open Sans", sans-serif;
-            line-height: 17px;
-            font-weight: 300;
-            margin: 30px 0; }
+          .wrapper_service .service .service_flexbox .service_item .service_item_content .height {
+            height: 280px; }
+            .wrapper_service .service .service_flexbox .service_item .service_item_content .height p {
+              font-size: 14px;
+              font-family: "Open Sans", sans-serif;
+              line-height: 17px;
+              font-weight: 300;
+              margin: 30px 0; }
 
 .wrapper_approach {
   width: 78%;
@@ -1949,8 +1951,6 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
   .timeline-card p {
     padding: 20px;
     margin: 0; }
-  .timeline-card a {
-    margin-left: 20px; }
 
 .timeline-item .timeline-img-header {
   overflow: hidden;

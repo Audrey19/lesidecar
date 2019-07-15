@@ -1,9 +1,4 @@
 
-
-(function($, root, undefined) {
-
-        $(function(){
-
             window.sr = ScrollReveal();
 
             if ($(window).width() < 768) {
@@ -51,8 +46,4 @@
                   duration: 800,
                 });
 
-
-          });
-
-})(jQuery, this);
 

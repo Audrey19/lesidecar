@@ -42,8 +42,6 @@
     integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="
   crossorigin="anonymous"></script>
 
-  <script src="<?php bloginfo('stylesheet_directory');?>/main.js"></script>
-
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); echo '/main.js?' . filemtime( get_stylesheet_directory() . '/main.js'); ?>"></script>
   <?php wp_footer(); ?>
   </section>
