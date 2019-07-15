@@ -1675,8 +1675,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
         height: 100vh;
         right: 0;
         top: 0;
-        width: 45vw;
-        overflow: hidden; }
+        width: 45vw; }
         .acceuil_wrapper .acceuil_box_right img {
           width: 100%;
           object-fit: cover; } }
@@ -1688,7 +1687,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
         position: absolute;
         bottom: 0px;
         left: 45%;
-        bottom: -10%; }
+        bottom: 5%; }
         .acceuil_wrapper .acceuil_box_middle .acceuil_box_middle_item {
           width: 100%;
           object-fit: cover;
