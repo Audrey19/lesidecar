@@ -12,7 +12,10 @@
             if( !empty($back) ): ?>
                 <img class="portfolio_image" src="<?php echo $back['url']; ?>" alt="<?php echo $back['alt']; ?>"">
             <?php endif; ?>
-            <div class="btn_circle absolute">></div>
+            <?php $btnn = get_sub_field('btnn-logo');
+            if( !empty($back) ): ?>
+                <img class="absolute" src="<?php echo $btnn['url']; ?>" alt="<?php echo $btnn['alt']; ?>"">
+            <?php endif; ?>
             <div class="hover_box fade-in">
                 <div class="hover_text">
                     <h1><?php the_sub_field('project-title'); ?></h1>

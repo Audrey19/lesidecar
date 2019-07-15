@@ -1751,6 +1751,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
       .portfolio .portfolio_flexbox .flexbox_item .absolute {
         position: absolute;
         z-index: 1;
+        width: 40px;
         bottom: 20px;
         right: 20px; }
         @media only screen and (min-width: 1025px) {
@@ -2226,7 +2227,7 @@ blockquote {
         -ms-flex-item-align: center;
         align-self: center; }
         .collabo_flexbox .text_droite .text_titles .partenaire_flexbox .image img {
-          padding-top: 10px;
+          border-radius: 50%;
           width: 50px;
           height: 50px; }
       .collabo_flexbox .text_droite .text_titles .partenaire_flexbox .partenaire {

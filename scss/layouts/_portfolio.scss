@@ -29,6 +29,7 @@
             .absolute{
                 position: absolute;
                 z-index: 1;
+                width: 40px;
                 bottom: 20px;
                 right:20px;
                 @include responsive(laptop){

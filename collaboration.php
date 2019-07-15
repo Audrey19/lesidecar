@@ -17,7 +17,10 @@
                     <div class="partenaire_flexbox margin-top--medium">
                     <?php  while ( have_rows('partenaire-repeteur') ) : the_row(); ?>
                             <div class="image">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/images/emile.png" alt="partenaire">
+                                <?php $pp = get_sub_field('partenaire-image');
+                                if( !empty($pp) ): ?>
+                                    <img class="absolute" src="<?php echo $pp['url']; ?>" alt="<?php echo $pp['alt']; ?>">
+                                <?php endif; ?>
                             </div>
                             <div class="partenaire">
                                 <h2 class="sectionTitle"><?php the_sub_field('partenaire-title'); ?></h2>
@@ -26,6 +29,7 @@
                                     <a href=<?php echo $web; ?> target="_blank">
                                         <?php the_sub_field('partenaire-name'); ?>
                                     </a>
+                
                                 <?php endif; ?>
                             </div>
                     <?php endwhile;?>
