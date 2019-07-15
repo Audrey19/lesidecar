@@ -1403,8 +1403,12 @@ body {
   transform: rotate(-90deg); }
 
 /* Layout */
+.page {
+  width: 100%;
+  position: relative; }
+
 header {
-  width: 85%;
+  width: 78%;
   margin: 10px auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1414,8 +1418,7 @@ header {
   flex-direction: row;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: relative; }
+  justify-content: space-between; }
   header .logo_name {
     display: none; }
     @media only screen and (min-width: 1025px) {
@@ -1434,10 +1437,10 @@ header {
         width: 35px;
         height: auto;
         position: absolute;
-        right: 50%;
-        -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-        transform: translate(-50%);
+        left: 50%;
+        -webkit-transform: translate(-30%);
+        -ms-transform: translate(-30%);
+        transform: translate(-30%);
         padding-top: 0; } }
   header .langue {
     display: none; }
@@ -1445,7 +1448,7 @@ header {
       header .langue {
         display: block;
         position: absolute;
-        right: 0;
+        right: 50px;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -1470,8 +1473,7 @@ header {
           flex-direction: row;
           -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
-          justify-content: space-between;
-          padding-right: 120px; }
+          justify-content: space-between; }
           header .menu_container ul#menu-navmenu a, header .menu_container #menu-navmenu_en a, header .menu_container #menu-navmenu_nl a {
             text-decoration: none;
             size: 12px;
@@ -1624,38 +1626,37 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
 
 .acceuil_wrapper {
   position: relative;
-  width: 100%;
-  margin: auto; }
+  width: 100%; }
   @media only screen and (min-width: 1025px) {
     .acceuil_wrapper {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
+      height: 80vh; } }
   .acceuil_wrapper .acceuil_box_left {
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    z-index: 3; }
+    width: 100%;
+    margin: auto; }
     @media only screen and (min-width: 1025px) {
       .acceuil_wrapper .acceuil_box_left {
-        text-align: left;
-        margin-left: 11%;
-        width: 50%; }
-        .acceuil_wrapper .acceuil_box_left .box_left_width_item {
-          width: 70%; } }
-    @media only screen and (min-width: 1025px) and (min-width: 1025px) {
-      .acceuil_wrapper .acceuil_box_left .box_left_width_item {
-        margin-top: 8rem; }
-        .acceuil_wrapper .acceuil_box_left .box_left_width_item a {
-          margin-top: 4rem; } }
-    .acceuil_wrapper .acceuil_box_left .hometitle {
-      font-size: 60px; }
+        width: 78%;
+        margin: auto; } }
+    .acceuil_wrapper .acceuil_box_left .box_left_item {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      z-index: 3; }
+      @media only screen and (min-width: 1025px) {
+        .acceuil_wrapper .acceuil_box_left .box_left_item {
+          width: 40%;
+          text-align: left;
+          margin: 0; } }
+      .acceuil_wrapper .acceuil_box_left .box_left_item .hometitle {
+        font-size: 60px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding-top: 4rem;
+        padding-bottom: 50px; }
+      .acceuil_wrapper .acceuil_box_left .box_left_item p {
+        margin: 0;
+        font-size: 18px;
+        line-height: 28px; }
   .acceuil_wrapper .parallax {
     background-image: url("assets/images/profile_picture.png");
     background-size: contain;
@@ -1666,28 +1667,39 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
       .acceuil_wrapper .parallax {
         display: none; } }
   .acceuil_wrapper .acceuil_box_right {
-    display: none;
-    width: 100%; }
+    display: none; }
     @media only screen and (min-width: 1025px) {
       .acceuil_wrapper .acceuil_box_right {
         display: block;
-        position: relative;
-        width: 50%; } }
-    .acceuil_wrapper .acceuil_box_right img {
-      width: 100%;
-      object-fit: cover; }
-    @media only screen and (min-width: 1025px) {
-      .acceuil_wrapper .acceuil_box_right .acceuil_box_middle {
         position: absolute;
-        bottom: -100px;
-        left: -200px; } }
+        height: 100vh;
+        right: 0;
+        top: 0;
+        width: 45vw;
+        overflow: hidden; }
+        .acceuil_wrapper .acceuil_box_right img {
+          width: 100%;
+          object-fit: cover; } }
+  .acceuil_wrapper .acceuil_box_middle {
+    display: none; }
+    @media only screen and (min-width: 1025px) {
+      .acceuil_wrapper .acceuil_box_middle {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 45%;
+        bottom: -10%; }
+        .acceuil_wrapper .acceuil_box_middle .acceuil_box_middle_item {
+          width: 100%;
+          object-fit: cover;
+          box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44); } }
 
 .portfolio {
   width: 78%;
   margin: auto; }
   @media only screen and (min-width: 1025px) {
     .portfolio {
-      padding-top: 15rem; } }
+      padding-top: 10rem; } }
   .portfolio .portfolio_titles {
     width: 100%; }
     @media only screen and (min-width: 1025px) {
@@ -1827,7 +1839,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
             text-transform: uppercase;
             color: #4737FF; }
           .wrapper_service .service .service_flexbox .service_item .service_item_content .height {
-            height: 280px; }
+            height: 235px; }
             .wrapper_service .service .service_flexbox .service_item .service_item_content .height p {
               font-size: 14px;
               font-family: "Open Sans", sans-serif;
@@ -1954,10 +1966,10 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
 
 .timeline-item .timeline-img-header {
   overflow: hidden;
-  outline: 100px solid rgba(117, 81, 236, 0.5);
-  outline-offset: -100px; }
+  background-color: #7551ec; }
   .timeline-item .timeline-img-header .landscape {
-    width: 100%; }
+    width: 100%;
+    opacity: 0.5; }
 
 .timeline-img-header {
   height: 100px;

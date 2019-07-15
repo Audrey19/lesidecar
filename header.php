@@ -22,10 +22,15 @@
     <![endif]-->
 </head>
 <body>
+<section class="page">
+  
 <header>
   <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
+  
   <p class="logo_name">LE SIDECAR</p>
+  
   <?php wp_nav_menu(array('container_class' => 'menu_container','theme_location' => 'primary' )); ?>   
+  
   <?php // outputs a flags list (without languages names) ?><ul class="langue"><?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?></ul>
 </header>
 
