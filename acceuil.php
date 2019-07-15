@@ -9,7 +9,12 @@
         </div>
     </div>
 
-    <div class="parallax margin-bottom--medium"></div>
+    <div class="parallax margin-bottom--medium">
+        <?php $responsive = get_field('image-responsive');
+        if( !empty($responsive) ): ?>
+            <img class="parallax-image" src="<?php echo $responsive['url']; ?>" alt="<?php echo $responsive['alt']; ?>"">
+        <?php endif; ?>
+    </div>
 
 
     <div class="acceuil_box_right">

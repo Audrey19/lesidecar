@@ -36,11 +36,10 @@
         }
     }
         .parallax{
-        background-image: url("assets/images/profile_picture.png");
-        background-size: contain;
-        height: 400px; 
-        background-position: center center;
-        background-repeat: no-repeat;
+            .parallax-image{
+                width: 100%;
+                object-fit: contain;
+            }
             @include responsive(laptop){
                 display:none;
             }

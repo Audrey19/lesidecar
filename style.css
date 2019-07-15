@@ -1657,15 +1657,12 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
         margin: 0;
         font-size: 18px;
         line-height: 28px; }
-  .acceuil_wrapper .parallax {
-    background-image: url("assets/images/profile_picture.png");
-    background-size: contain;
-    height: 400px;
-    background-position: center center;
-    background-repeat: no-repeat; }
-    @media only screen and (min-width: 1025px) {
-      .acceuil_wrapper .parallax {
-        display: none; } }
+  .acceuil_wrapper .parallax .parallax-image {
+    width: 100%;
+    object-fit: contain; }
+  @media only screen and (min-width: 1025px) {
+    .acceuil_wrapper .parallax {
+      display: none; } }
   .acceuil_wrapper .acceuil_box_right {
     display: none; }
     @media only screen and (min-width: 1025px) {
