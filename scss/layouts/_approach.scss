@@ -147,10 +147,10 @@
 .timeline-item {
   .timeline-img-header {
 			 overflow: hidden;
-			 outline: 100px solid rgba(117, 81, 236, 0.5);
-   			outline-offset: -100px;
+			 background-color: rgba(117, 81, 236, 1);
 			.landscape{
 				width: 100%;
+				opacity: 0.5;
 			}
 		}
 }
