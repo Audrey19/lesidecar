@@ -24,6 +24,9 @@ register_nav_menus( array(
   'secondary' => __( 'Navigation secondaire', 'wpmu-theme' ),
 ) );
 
+/*Title-tag*/
+add_theme_support( 'title-tag' );
+
 /*******************************
 Autres
 *******************************/

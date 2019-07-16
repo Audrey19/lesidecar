@@ -4,9 +4,15 @@
 
 <section class="collabo_flexbox margin-top--medium">
             <div class="image_gauche">
-                <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/placeholder1.png" alt="logo">
+            <?php $placeholder = get_field('big-image');
+              if( !empty($placeholder) ): ?>
+                <img  class="logo_black" src="<?php echo $placeholder['url']; ?>" alt="<?php echo $placeholder['alt']; ?>">
+            <?php endif; ?>
                 <div class="image_centre">
-                    <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/Placeholder2bis.png" alt="logo">
+                <?php $placeholder2 = get_field('small-image');
+                    if( !empty($placeholder2) ): ?>
+                        <img  class="logo_black" src="<?php echo $placeholder2['url']; ?>" alt="<?php echo $placeholder2['alt']; ?>">
+                <?php endif; ?>
                 </div>
             </div>
 
