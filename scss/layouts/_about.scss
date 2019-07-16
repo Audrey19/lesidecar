@@ -17,15 +17,15 @@
 }
 
 .reverse{
-  padding-top: 2rem;
   @include responsive(laptop){
+    padding-top: 2rem;
     .box_image{
       order:2;
     }
     .box_description{
       order:1;
       padding-right: 40px;
-      box-sizing: border-box;
+      box-sizing: border-box;C
       .audrey{
         text-align: right;
       }
@@ -53,7 +53,7 @@
       overflow: hidden;
       object-fit:cover;
           @include responsive(laptop){
-          width: 50%;
+          width: 40%;
           overflow: hidden;
           margin: 0;
           padding: 0;
@@ -72,12 +72,14 @@
       margin: auto;
       text-align: center;
         @include responsive(laptop){
-          width: 50%;
+          width: 60%;
           text-align: left;
           overflow: hidden;
         }
         .evrard{
+          @include responsive(laptop){
           margin-left: 40px;
+          }
         }
         .mate_description{
           width: 100%;

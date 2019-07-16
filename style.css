@@ -2060,9 +2060,9 @@ blockquote {
         width: 760px;
         margin: 0; } }
 
-.reverse {
-  padding-top: 2rem; }
-  @media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
+  .reverse {
+    padding-top: 2rem; }
     .reverse .box_image {
       -webkit-order: 2;
       -ms-flex-order: 2;
@@ -2073,7 +2073,8 @@ blockquote {
       order: 1;
       padding-right: 40px;
       box-sizing: border-box; }
-      .reverse .box_description .audrey {
+      .reverse .box_description C
+.audrey {
         text-align: right; } }
 
 .team_mate_flexbox {
@@ -2100,7 +2101,7 @@ blockquote {
     object-fit: cover; }
     @media only screen and (min-width: 1025px) {
       .team_mate_flexbox .box_image {
-        width: 50%;
+        width: 40%;
         overflow: hidden;
         margin: 0;
         padding: 0; } }
@@ -2117,11 +2118,12 @@ blockquote {
     text-align: center; }
     @media only screen and (min-width: 1025px) {
       .team_mate_flexbox .box_description {
-        width: 50%;
+        width: 60%;
         text-align: left;
         overflow: hidden; } }
-    .team_mate_flexbox .box_description .evrard {
-      margin-left: 40px; }
+    @media only screen and (min-width: 1025px) {
+      .team_mate_flexbox .box_description .evrard {
+        margin-left: 40px; } }
     .team_mate_flexbox .box_description .mate_description {
       width: 100%; }
       .team_mate_flexbox .box_description .mate_description h2 {
