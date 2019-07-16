@@ -2073,8 +2073,7 @@ blockquote {
       order: 1;
       padding-right: 40px;
       box-sizing: border-box; }
-      .reverse .box_description C
-.audrey {
+      .reverse .box_description .audrey {
         text-align: right; } }
 
 .team_mate_flexbox {
