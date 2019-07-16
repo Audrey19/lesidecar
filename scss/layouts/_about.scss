@@ -53,7 +53,7 @@
       overflow: hidden;
       object-fit:cover;
           @include responsive(laptop){
-          width: 40%;
+          width: 50%;
           overflow: hidden;
           margin: 0;
           padding: 0;
@@ -72,7 +72,7 @@
       margin: auto;
       text-align: center;
         @include responsive(laptop){
-          width: 60%;
+          width: 50%;
           text-align: left;
           overflow: hidden;
         }
