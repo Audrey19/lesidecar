@@ -2391,11 +2391,33 @@ blockquote {
 .article_menu.is-active {
   display: block; }
 
-.category-site-vitrine.not-active {
+.article.not-active {
   display: none; }
 
-.category-e-commerce.not-active {
+.screen-reader-text, .search-submit {
   display: none; }
+
+.search-field {
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none; }
+  .search-field:focus {
+    border: 1px solid #4737FF;
+    transition: 0.35s ease;
+    color: #4737FF; }
+
+.search_container {
+  position: relative; }
+  .search_container .search-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    right: 5px; }
 
 .article_container {
   width: 1320px;

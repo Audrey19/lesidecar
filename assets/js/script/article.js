@@ -1,7 +1,6 @@
 $(".filter").click(function(){
     $(".article_menu").toggleClass("is-active");
-    $(".category-site-vitrine").removeClass("not-active");
-    $(".category-e-commerce").removeClass("not-active");
+    $(".article").removeClass("not-active");
 });
 
 $(".btn2").click(function(){
