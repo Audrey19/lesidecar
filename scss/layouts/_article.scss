@@ -1,0 +1,33 @@
+.article_container{
+    width: 1320px;
+    margin:auto;
+    padding: 0 80px;
+    .head{
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.03;
+    }
+    h3{
+        margin-top: 45px;
+        margin-bottom: 15px;
+        font-family: $ternaryFont;
+        font-size: 25px;
+    }
+    h2{
+        margin-top: 55px;
+        font-family: $ternaryFont;
+        font-size: 40px
+    }
+    li{
+    font-size: 16px;
+    line-height: 1.78;
+    color: #050a14;
+    font-weight: 300;
+    font-family: $ternaryFont;
+    }
+    p{
+    font-size: 18px;
+    line-height: 1.78;
+    margin-top: 14px;
+    }
+}
