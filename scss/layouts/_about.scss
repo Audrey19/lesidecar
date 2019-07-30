@@ -74,7 +74,6 @@
         @include responsive(laptop){
           width: 50%;
           text-align: left;
-          overflow: hidden;
         }
         .evrard{
           @include responsive(laptop){

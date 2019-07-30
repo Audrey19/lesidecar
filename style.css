@@ -2125,8 +2125,7 @@ blockquote {
     @media only screen and (min-width: 1025px) {
       .team_mate_flexbox .box_description {
         width: 50%;
-        text-align: left;
-        overflow: hidden; } }
+        text-align: left; } }
     @media only screen and (min-width: 1025px) {
       .team_mate_flexbox .box_description .evrard {
         margin-left: 40px; } }
