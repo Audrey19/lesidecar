@@ -1,6 +1,7 @@
 .header_blog{
  width: 75%;
  margin:auto;
+ position: relative;
  .blog_titles{
      display: flex;
      flex-direction: row;
@@ -8,6 +9,20 @@
      h1{
          margin:0;
      }
+ }
+ .article_menu.is-active{
+    position: absolute;
+    right:0; 
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.6;
+    li{
+        &:hover{
+            color:$primaryColor;
+            cursor: pointer;
+           }
+    }
  }
  .blog_articles{
      display:flex;

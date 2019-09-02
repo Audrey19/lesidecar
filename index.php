@@ -18,7 +18,7 @@
         <?php }?>
     </ul>
 
-    <div class="blog_articles margin-top--small">
+    <div class="blog_articles margin-top--medium">
         <?php while ( have_posts() ) : the_post();?>
              <div id="<?php the_ID(); ?>" <?php post_class('article'); ?>>      
                 <a href="<?php echo get_permalink(); ?>">   
