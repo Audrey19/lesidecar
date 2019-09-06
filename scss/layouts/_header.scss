@@ -9,7 +9,9 @@ header{
     flex-direction: row;
     justify-content: space-between;
     .logo_name{
+        text-decoration: none;
         display: none;
+        cursor: pointer;
         @include responsive(laptop){
         display: block;
         size: 14px;

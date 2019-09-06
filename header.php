@@ -23,9 +23,9 @@
 <section class="page">
   
 <header>
-  <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
+ <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
   
-  <p class="logo_name">LE SIDECAR</p>
+  <a class="logo_name" href="https://www.lesidecarweb.com"><p>LE SIDECAR</p></a>
   
   <?php wp_nav_menu(array('container_class' => 'menu_container','theme_location' => 'primary' )); ?>   
   

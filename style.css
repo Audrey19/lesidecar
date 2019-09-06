@@ -1450,7 +1450,9 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   header .logo_name {
-    display: none; }
+    text-decoration: none;
+    display: none;
+    cursor: pointer; }
     @media only screen and (min-width: 1025px) {
       header .logo_name {
         display: block;
@@ -2424,9 +2426,9 @@ blockquote {
   position: relative; }
   .search_container .search-icon {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 0px;
+    width: 25px;
+    height: 25px;
+    top: 7px;
     right: 5px; }
 
 .article_container {
