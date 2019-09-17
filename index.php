@@ -7,7 +7,7 @@
     <div class="blog_titles">
         <div class="search_container">
         <?php get_search_form();?>
-        <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+        <a href="#"><img class="search-icon" src="https://i.goopics.net/nOq4X.png"></a>
         </div>
         <a class="btn btn_blue filter">FILTER</a> 
     </div>

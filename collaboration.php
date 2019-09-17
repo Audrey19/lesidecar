@@ -1,4 +1,4 @@
-<section class="wrapper_approach">
+<section class="wrapper_approach padding-top--big">
             <h3 class="sectionTitle"><?php the_field('partenaire-section'); ?></h3>
 </section>
 

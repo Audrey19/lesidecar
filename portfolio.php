@@ -1,4 +1,4 @@
-<section class="portfolio padding-top--small padding-bottom--big" id="portfolio">
+<section class="portfolio padding-top--small" id="portfolio">
     <div class="portfolio_titles">
         <h3 class="sectionTitle"><?php the_field('section-title'); ?></h3>
         <h1 class="firstTitle"><?php the_field('first-title'); ?></h1>

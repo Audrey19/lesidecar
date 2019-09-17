@@ -1,4 +1,4 @@
-<section class="wrapper_approach padding-bottom--medium" id="approach">
+<section class="wrapper_approach padding-top--big" id="approach">
         <div class="approach_titles">
             <h3 class="sectionTitle"><?php the_field('methode-section'); ?></h3>
             <h1 class="firstTitle"><?php the_field('methode-titre'); ?></h1>

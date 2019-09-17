@@ -22,19 +22,20 @@
 <body>
 <section class="page">
   
-<header>
- <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
-  
-  <a class="logo_name" href="https://www.lesidecarweb.com"><p>LE SIDECAR</p></a>
-  
-  <?php wp_nav_menu(array('container_class' => 'menu_container','theme_location' => 'primary' )); ?>   
-  
-  <?php // outputs a flags list (without languages names) ?><ul class="langue"><?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?></ul>
-</header>
+<div class="back-ground-menu">
+    <header>
+    <img class="logo_black" src="<?php bloginfo('template_url'); ?>/assets/images/logo_bl.png" alt="logo">
+      
+      <a class="logo_name" href="https://www.lesidecarweb.com"><p>LE SIDECAR</p></a>
+      
+      <?php wp_nav_menu(array('container_class' => 'menu_container','theme_location' => 'primary' )); ?>   
+      
+      <?php // outputs a flags list (without languages names) ?><ul class="langue"><?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?></ul>
+    </header>
 
-<?php wp_nav_menu(array('container_class' => 'menu_container_responsive','theme_location' => 'primary' )); ?>
-<?php // outputs a flags list (without languages names) ?><ul class="langue_responsive"><?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?></ul>
-
+    <?php wp_nav_menu(array('container_class' => 'menu_container_responsive','theme_location' => 'primary' )); ?>
+    <?php // outputs a flags list (without languages names) ?><ul class="langue_responsive"><?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?></ul>
+</div>
 <button class="hamburger hamburger--slider" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>

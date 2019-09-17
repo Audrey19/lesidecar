@@ -1,7 +1,7 @@
 
 
 <section class="acceuil_wrapper">
-    <div class="acceuil_box_left">
+    <div class="acceuil_box_left padding-top--medium">
         <div class="box_left_item">
             <h1 class="hometitle"><?php the_field('home-title'); ?></h1>
              <?php the_field('home-textarea'); ?>

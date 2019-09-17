@@ -103,14 +103,35 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "349"
+                "value": "6"
             }
         ],
         [
             {
                 "param": "page",
                 "operator": "==",
-                "value": "6"
+                "value": "276"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "278"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "349"
+            }
+        ],
+        [
+            {
+                "param": "post",
+                "operator": "==",
+                "value": "347"
             }
         ]
     ],
@@ -122,5 +143,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566829791
+    "modified": 1568038908
 }

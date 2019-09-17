@@ -3,16 +3,21 @@
  margin:auto;
  position: relative;
  .blog_titles{
+    @include responsive(laptop){
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+    }
      h1{
          margin:0;
      }
  }
  .article_menu.is-active{
+    @include responsive(laptop){
     position: absolute;
     right:0; 
+    }
+    padding: 0;
     list-style-type: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -25,13 +30,17 @@
     }
  }
  .blog_articles{
+    @include responsive(laptop){
      display:flex;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: space-between;
+	}
      .article{
          margin-top: 40px;
-         width: 30%;
+         @include responsive(laptop){
+            width:30%;
+            }
          a{
              text-decoration: none;
          }
@@ -85,6 +94,10 @@
 
 .search_container{
     position: relative;
+    margin-bottom: 20px;
+    @include responsive(laptop){
+        margin-bottom: 0;
+        }
     .search-icon{
         position: absolute;
         width: 25px;

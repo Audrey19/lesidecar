@@ -1,4 +1,4 @@
-<section class="wrapper_approach padding-top--medium padding-bottom--medium" id="contact">
+<section class="wrapper_approach padding-top--big padding-bottom--medium" id="contact">
         <div class="approach_titles">
             <h3 class="sectionTitle"><?php the_field('contact-section'); ?></h3>
             <h1 class="firstTitle"><?php the_field('contact-titre'); ?></h1>

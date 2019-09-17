@@ -2,70 +2,74 @@
     width: 100%;
     position: relative;
 }
-header{
-    width: 78%;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .logo_name{
-        text-decoration: none;
-        display: none;
-        cursor: pointer;
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         @include responsive(laptop){
-        display: block;
-        size: 14px;
-        font-weight: bold;
-        font-family: $primaryFont;
+            background-color: #F2F3F3 ;
+            position: fixed;
+            z-index: 40;
+            width: 100%;
+            padding: 10px 131px;
+            box-sizing: border-box;
         }
-    }
-    .logo_black{
-        min-width: 30px;
-        height:32.14px;
-        padding-top: 10px;
-        display: block;
-        @include responsive(laptop){
-        width: 35px;
-        height: auto;
-        position: absolute;
-        left: 50%;
-        transform: translate(-30%);
-        padding-top: 0;
-        }
-    }
-    .langue{
-        display: none;
-        @include responsive(laptop){
-            display:block;
-            position: absolute;
-            right: 50px;
-            display:flex;
-            flex-direction: row;
-            li{
-                list-style-type: none;
+        .logo_name{
+            display: none;
+            @include responsive(laptop){
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+            size: 14px;
+            font-weight: bold;
+            font-family: $primaryFont;
             }
         }
-    }
-    .menu_container{
-        display:none;
-        @include responsive(laptop){
-            display:block;
-            width:45%;
-            ul#menu-navmenu, #menu-navmenu_en, #menu-navmenu_nl{
-                list-style-type: none;
-                display: flex;
+        .logo_black{
+            display: none;
+            @include responsive(laptop){
+            display: block;
+            width: 35px;
+            height: auto;
+            position: absolute;
+            left: 50%;
+            transform: translate(-30%);
+            padding-top: 0;
+            }
+        }
+        .langue{
+            display: none;
+            @include responsive(laptop){
+                display:block;
+                position: absolute;
+                right: 50px;
+                display:flex;
                 flex-direction: row;
-                justify-content: space-between;
-                    a{
-                        text-decoration: none;
-                        size: 12px;
-                        font-family: $ternaryFont;
-                        color: black
-                    }
+                li{
+                    list-style-type: none;
                 }
             }
+        }
+        .menu_container{
+            display:none;
+            @include responsive(laptop){
+                display:block;
+                width:45%;
+                ul#menu-navmenu, #menu-navmenu_en, #menu-navmenu_nl{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                        a{
+                            text-decoration: none;
+                            size: 12px;
+                            font-family: $ternaryFont;
+                            color: black
+                        }
+                    }
+                }
+        }
     }
-}
 
 /*navigation menu Responsive*/
 .langue_responsive{

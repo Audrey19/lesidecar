@@ -1,4 +1,4 @@
-<section class="wrapper_service margin-bottom--big" id="services">
+<section class="wrapper_service padding-top--big" id="services">
     <img class="triangle" src="<?php bloginfo('template_url'); ?>/assets/images/mask_triangle.png" alt="logo">
     <div class="service">
         <div class="service_titles">
