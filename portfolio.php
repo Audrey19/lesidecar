@@ -5,6 +5,15 @@
         <p class="paragraphe"><?php the_field('portfolio_textarea'); ?></p>
     </div>
 
+    <!--<div class="portfolio_categories">
+        <ul class="portfolio_categories_list ">
+            <?php $categories = get_categories(); ?>
+            <?php foreach ($categories as $object){?>
+                <li data-filtre=".category-<?php echo $object->slug; ?>"><?php echo $object->slug;?></li>
+            <?php }?>
+        </ul>
+    </div>-->
+
     <div class="portfolio_flexbox margin-top--medium">
     <?php  while ( have_rows('repeteur') ) : the_row(); ?>
         <div class="flexbox_item">
@@ -23,7 +32,7 @@
                     <?php the_sub_field('project-textarea'); ?>
                     <?php $link = get_sub_field('project-link');
                         if( $link ): ?>
-                        <a class="btn btn_white" href="<?php echo $link; ?>" target="_blank"><?php the_sub_field('bouton-text'); ?></a>
+                        <a class="btn btn_blue" href="<?php echo $link; ?>" target="_blank"><?php the_sub_field('bouton-text'); ?></a>
                     <?php endif; ?>
                 </div>
             </div>
@@ -32,4 +41,8 @@
     <div class="flexbox_item"></div>  
     <div class="flexbox_item"></div>  
     </div>
+
+ 
+
+   
 </section>

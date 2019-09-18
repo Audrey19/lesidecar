@@ -21,7 +21,7 @@
         .flexbox_item{
             position: relative;
             @include responsive(laptop){
-            width:calc(25% - 10px);
+            width:calc(33% - 10px);
             }
             overflow: hidden;
             margin: 5px;
@@ -50,7 +50,7 @@
                 transition: 500ms ease-in-out all;
                 .hover_text{
                     text-align: center;
-                    color:white;;
+                    color:$primaryColor;
                     position: absolute;
                     width: 80%;
                     left:50%;
@@ -75,7 +75,7 @@
                         line-height: 17px;
                         font-weight: 300;
                         margin: 30px 0;
-                        color:white;
+                        color:$primaryColor;
                     }
                 }
             }
@@ -89,9 +89,13 @@
                 .hover_box{
                     opacity: 1;
                     visibility: visible;
-                    background-color: rgba(20, 52, 225, 0.85);
+                    background-color: rgba(255, 255, 255, 0.849);
                 }
             }
         }
+    }
+
+    .portfolio_flexbox{
+        position: relative;
     }
 }

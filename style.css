@@ -1760,7 +1760,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
       cursor: pointer; }
       @media only screen and (min-width: 1025px) {
         .portfolio .portfolio_flexbox .flexbox_item {
-          width: calc(25% - 10px); } }
+          width: calc(33% - 10px); } }
       .portfolio .portfolio_flexbox .flexbox_item .absolute {
         position: absolute;
         z-index: 1;
@@ -1784,7 +1784,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
         transition: 500ms ease-in-out all; }
         .portfolio .portfolio_flexbox .flexbox_item .hover_box .hover_text {
           text-align: center;
-          color: white;
+          color: #4737FF;
           position: absolute;
           width: 80%;
           left: 50%;
@@ -1809,7 +1809,7 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
             line-height: 17px;
             font-weight: 300;
             margin: 30px 0;
-            color: white; }
+            color: #4737FF; }
       .portfolio .portfolio_flexbox .flexbox_item .portfolio_image {
         object-fit: cover;
         width: 100%;
@@ -1818,7 +1818,9 @@ ul#menu-navmenu-1.is-active, #menu-navmenu_en-1.is-active, #menu-navmenu_nl-1.is
       .portfolio .portfolio_flexbox .flexbox_item:hover .hover_box {
         opacity: 1;
         visibility: visible;
-        background-color: rgba(20, 52, 225, 0.85); }
+        background-color: rgba(255, 255, 255, 0.849); }
+  .portfolio .portfolio_flexbox {
+    position: relative; }
 
 .wrapper_service {
   width: 100%;
