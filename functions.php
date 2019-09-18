@@ -91,6 +91,10 @@ add_filter( 'use_default_gallery_style', '__return_false' );
 
 //add_image_size( 'galerie', 500, 300, true ); // (cropped)
 
+/*******************************
+CUSTOM POST TYPE
+*******************************/
+get_template_part('post-type/projet');
 
 /*******************************
 Desactivé Guttenberg

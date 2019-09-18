@@ -2476,6 +2476,24 @@ blockquote {
     line-height: 1.78;
     margin-top: 14px; }
 
+.projet_container {
+  width: 1320px;
+  margin: auto;
+  padding: 0 80px; }
+  .projet_container .projet_flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .projet_container .projet_flex .projet_img {
+      width: 50%; }
+    .projet_container .projet_flex .projet_content {
+      width: 50%; }
+      .projet_container .projet_flex .projet_content h1 {
+        font-size: 80px; }
+
 /* Vendor */
 #outdated {
   display: none;
