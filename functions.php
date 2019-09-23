@@ -8,7 +8,7 @@ Start by adding theme support
 //add_theme_support( 'post-formats', array( 'aside', 'quote' ) );
 
 /* post thumbnails */
-add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+add_theme_support( 'post-thumbnails', array( 'post', 'page', 'projet' ) );
 
 /* HTML5 */
 add_theme_support( 'html5' );

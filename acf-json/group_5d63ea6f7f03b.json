@@ -122,16 +122,23 @@
         ],
         [
             {
-                "param": "page",
+                "param": "post_type",
                 "operator": "==",
-                "value": "349"
+                "value": "post"
             }
         ],
         [
             {
-                "param": "post",
+                "param": "post_type",
                 "operator": "==",
-                "value": "347"
+                "value": "projet"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "349"
             }
         ]
     ],
@@ -143,5 +150,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568038908
+    "modified": 1569233733
 }
