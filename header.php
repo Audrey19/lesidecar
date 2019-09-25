@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); echo '/style.css?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
-    <script>
-        ScrollReveal({ reset: true });
-    </script>
 
     <?php wp_head(); ?>
 

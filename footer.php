@@ -2,12 +2,12 @@
   <div class="footergrey">
     <div class="footergrey_container">
       <div class="greyitem">
-        <p><?php the_field('adresse-title'); ?></p>
-        <p><?php the_field('adresse-texte'); ?></p>
+        <p><?php  echo pll_current_language('slug'); the_field('adresse-title', 'option'); ?></p>
+        <p><?php the_field('adresse-texte_'.pll_current_language('slug'), 'option'); ?></p>
       </div>
       <div class="greyitem">
         <div>
-          <p><?php the_field('follow-title'); ?></p>
+          <p><?php the_field('follow-title', 'option'); ?></p>
         </div>
         <div>
          <!-- <a href="#" class="fa fa-facebook"></a>-->
@@ -16,8 +16,8 @@
         </div>
       </div>
       <div class="greyitem">
-        <p><?php the_field('contact-title'); ?></p>
-        <?php the_field('contact-footer-texte'); ?>
+        <p><?php the_field('contact-title', 'option'); ?></p>
+        <?php the_field('contact-footer-texte', 'option'); ?>
         
       </div>
     </div>

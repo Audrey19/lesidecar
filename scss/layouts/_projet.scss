@@ -2,18 +2,28 @@
     margin:auto;
     max-width: 1140px;
     .projet_flex{
+        @include responsive(laptop){
         display: flex;
         flex-direction: row;
+        }
         .projet_img{
+            display: none;
+            @include responsive(laptop){
+            display: block;
             width: 50%;
             img{
                 width:100%;
                 height:auto;
             }
         }
+    }
         .projet_content{
+            width: 80%;
+            margin: auto;
+            @include responsive(laptop){
             width: 50%;
             padding-left: 30px;
+            }
             box-sizing: border-box;
             a{
                 border:none;

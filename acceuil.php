@@ -12,7 +12,7 @@
     <div class="parallax margin-bottom--medium">
         <?php $responsive = get_field('image-responsive');
         if( !empty($responsive) ): ?>
-            <img class="parallax-image" src="<?php echo $responsive['url']; ?>" alt="<?php echo $responsive['alt']; ?>"">
+            <img class="parallax-image" src="<?php echo $responsive['url']; ?>" alt="<?php echo $responsive['alt']; ?>">
         <?php endif; ?>
     </div>
 
@@ -20,7 +20,7 @@
     <div class="acceuil_box_right">
     <?php $image = get_field('background-image');
         if( !empty($image) ): ?>
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"">
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
         <?php endif; ?>
     </div>
 

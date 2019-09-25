@@ -27,6 +27,38 @@ register_nav_menus( array(
 /*Title-tag*/
 add_theme_support( 'title-tag' );
 
+/*ACF Option*/
+if( function_exists('acf_add_options_page') ) {
+
+
+  acf_add_options_page(array(
+		'page_title' 	=> 'Footer',
+		'menu_title'	=> 'Footer',
+		'menu_slug' 	=> 'footer',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+  ));
+  
+  acf_add_options_page(array(
+		'page_title' 	=> 'Footer_NL',
+		'menu_title'	=> 'Footer_NL',
+		'menu_slug' 	=> 'footer_nl',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+  ));
+  
+  acf_add_options_page(array(
+		'page_title' 	=> 'Footer_EN',
+		'menu_title'	=> 'Footer_EN',
+		'menu_slug' 	=> 'footer-en',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+
+	
+}
+
+
 /*******************************
 Autres
 *******************************/

@@ -1,6 +1,6 @@
 {
     "key": "group_5d63ea6f7f03b",
-    "title": "[Module] footer",
+    "title": "[OPTION] footer",
     "fields": [
         {
             "key": "field_5d63eaee6092b",
@@ -101,44 +101,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "options_page",
                 "operator": "==",
-                "value": "6"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "276"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "278"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "projet"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "349"
+                "value": "footer-${lang}"
             }
         ]
     ],
@@ -150,5 +115,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1569233733
+    "modified": 1569417104
 }

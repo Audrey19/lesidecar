@@ -5,9 +5,10 @@
         <div class="projet_flex">
             <div class="projet_img">
                 <div class="img">
-                    <?php if ( has_post_thumbnail() ) {
-                    the_post_thumbnail('medium'); 
-                    }; ?>
+                <picture>
+                    <source srcset="<?php the_post_thumbnail_url('large'); ?>" media="(min-width: 1040px)">
+                    <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
+                </picture>
                 </div>
             </div>
             <div class="projet_content">

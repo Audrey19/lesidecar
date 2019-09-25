@@ -1,4 +1,5 @@
 $(".filter").click(function(){
+    console.log('click');
     $(".article_menu").toggleClass("is-active");
     $(".article").removeClass("not-active");
 });

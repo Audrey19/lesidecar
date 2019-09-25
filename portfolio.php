@@ -5,7 +5,7 @@
         <p class="paragraphe"><?php the_field('portfolio_textarea'); ?></p>
     </div>
 
-    <!--<div class="portfolio_categories">
+<!--<div class="portfolio_categories">
         <ul class="portfolio_categories_list ">
             <?php $categories = get_categories(); ?>
             <?php foreach ($categories as $object){?>
@@ -28,7 +28,7 @@
 
                 <?php $link = get_sub_field('project-link');
                 if( $link ): ?>
-                    <a href="<?php echo $link; ?>" target="_blank">
+                    <a href="<?php echo $link; ?>">
                         <div class="hover_box fade-in">
                             <div class="hover_text">
                                 <h1><?php the_sub_field('project-title'); ?></h1>
